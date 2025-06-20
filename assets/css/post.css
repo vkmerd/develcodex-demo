@@ -1,0 +1,177 @@
+#post-detail .post-header{
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+#post-detail .post-header .post-title {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#post-detail .post-content p,
+#post-detail .post-content ul,
+#post-detail .post-content ol {
+    margin: 25px 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #FFF;
+}
+
+#post-detail .post-content h1 {
+    font-size: 28px;
+}
+
+#post-detail .post-content h2 {
+    font-size: 24px;
+}
+
+#post-detail .post-content h3 {
+    font-size: 20px;
+}
+
+#post-detail .post-content h4,
+#post-detail .post-content h5 {
+    font-size: 16px;
+}
+
+#post-detail .post-content h1,
+#post-detail .post-content h2,
+#post-detail .post-content h3,
+#post-detail .post-content h4 {
+    margin: 25px 0;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+#detail-content .post-content ol {
+    list-style: decimal !important;
+    padding-left: 20px;
+}
+
+#post-detail.post-content ul {
+    padding-left: 20px;
+}
+
+#post-detail.post-content ul li {
+    list-style: disc;
+}
+
+#post-detail.post-content p img {
+    margin-bottom: 20px;
+}
+
+#post-detail .post-content a {
+    color: #fff;
+    font-weight: 600;
+}
+
+#post-detail .post-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+#post-detail .post-header .contents{
+    line-height: 1.2;
+}
+
+#post-detail .post-header .post-category {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+#post-detail .post-header .post-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+#post-detail .post-content figure {
+    margin: 0px;
+    border: 6px solid #fff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.sidebar-form {
+    position: sticky;
+    top: 50px;
+}
+
+#sidebar-area .sidebar-form {
+  background: radial-gradient(closest-side at 50% 50%, #514E4E 0%, #000000 100%) no-repeat padding-box;
+  padding: 35px 20px;
+  overflow: hidden;
+  position: sticky;
+  top: 50px;
+  box-shadow: -2.94px 4px 7px #121A0D00;
+  border-radius: 17px;
+}
+
+#sidebar-area .sidebar-form-title {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#sidebar-area .sidebar-form .input-area {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+#sidebar-area .sidebar-form #sidebar-form {
+  position: relative;
+  z-index: 1;
+}
+
+#sidebar-area .sidebar-form .input-area input {
+    padding: 15px 25px;
+    width: 100%;
+    border-radius: 9px;
+    color: #000;
+    outline: none;
+    border: none;
+}
+
+#sidebar-area .sidebar-form .input-area input::placeholder {
+  color: #000;
+  font-size: 18px;
+}
+
+#sidebar-area .sidebar-form .input-area input#phoneNumber {
+  color: #000;
+  font-size: 18px;
+}
+
+#sidebar-area .sidebar-form .input-area label {
+  width: 100%;
+  border: 1px dashed #fff;
+  padding: 15px 26px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 9px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#sidebar-area .sidebar-form .form-button {
+    width: 100%;
+    background-color: #0b0b13;
+    padding: 15px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border: 1px solid #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
