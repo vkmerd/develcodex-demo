@@ -683,6 +683,7 @@
     transition: width 0.3s ease-out;
 }
 
+
 /* mindmap */
 
 #social-media-mindmap{
@@ -897,6 +898,13 @@
   main .social-media-stages{
     padding: 60px 0;
   }
+
+  main #social-media-mindmap{
+    padding: 40px 20px;
+  }
+  main .mindmap-list{
+    padding-bottom: 0px;
+  }  
 }
 
 @media (max-width:768px) {
