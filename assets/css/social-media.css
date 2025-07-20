@@ -569,7 +569,7 @@
 
 .horizontal-scroll-section {
     width: 100%; 
-    margin: 50px auto;
+    margin: 50px auto 0px;
     box-sizing: border-box;
 }
 
