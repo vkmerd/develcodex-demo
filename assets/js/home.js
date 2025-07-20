@@ -146,99 +146,116 @@ document.addEventListener('DOMContentLoaded', () => {
 // Services
 
 document.addEventListener('DOMContentLoaded', () => {
+  const scrollWrapper = document.querySelector('.horizontal-scroll-wrapper');
+  const servicesContainer = document.getElementById('servicesContainer');
+  const progressBar = document.getElementById('scrollProgressBar');
 
-    const scrollWrapper = document.querySelector('.horizontal-scroll-wrapper');
-    const servicesContainer = document.getElementById('servicesContainer');
-    const progressBar = document.getElementById('scrollProgressBar');
+  if (!scrollWrapper || !servicesContainer || !progressBar) return;
 
+  let currentScrollX = 0;
+  let maxScrollX = 0;
+  const scrollSpeedFactor = 1.2;
 
-    if (!scrollWrapper || !servicesContainer || !progressBar) {
-        return; 
-    }
+  function calculateScrollLimits() {
+      const wrapperWidth = scrollWrapper.offsetWidth;
+      const containerWidth = servicesContainer.scrollWidth;
 
-    let currentScrollX = 0;
-    let maxScrollX = 0;
-    const scrollSpeedFactor = 1.2;
+      if (containerWidth <= wrapperWidth) {
+          maxScrollX = 0;
+          servicesContainer.style.transform = `translateX(0px)`;
+      } else {
+          maxScrollX = containerWidth - wrapperWidth;
+      }
 
-    function calculateScrollLimits() {
-        const wrapperWidth = scrollWrapper.offsetWidth;
-        const containerWidth = servicesContainer.scrollWidth;
+      currentScrollX = Math.max(-maxScrollX, Math.min(0, currentScrollX));
+      servicesContainer.style.transform = `translateX(${currentScrollX}px)`;
+      updateProgressBar();
+  }
 
-        if (containerWidth <= wrapperWidth) {
-            maxScrollX = 0;
-            servicesContainer.style.transform = `translateX(0px)`;
-        } else {
-            maxScrollX = containerWidth - wrapperWidth;
-        }
+  function handleWheelScroll(event) {
+      event.preventDefault();
+      let scrollAmount = event.deltaY * scrollSpeedFactor;
+      currentScrollX -= scrollAmount;
+      currentScrollX = Math.max(-maxScrollX, Math.min(0, currentScrollX));
+      servicesContainer.style.transform = `translateX(${currentScrollX}px)`;
+      updateProgressBar();
+  }
 
-        currentScrollX = Math.max(-maxScrollX, Math.min(0, currentScrollX));
-        servicesContainer.style.transform = `translateX(${currentScrollX}px)`;
-        updateProgressBar();
-    }
+  function updateProgressBar() {
+      if (maxScrollX === 0) {
+          progressBar.style.width = '0%';
+          return;
+      }
+      const scrollPercentage = (Math.abs(currentScrollX) / maxScrollX) * 100;
+      progressBar.style.width = `${scrollPercentage}%`;
+  }
 
-    function handleWheelScroll(event) {
-        event.preventDefault();
+  let isDragging = false;
+  let startX;
+  let scrollLeftStart;
 
-        let scrollAmount = event.deltaY * scrollSpeedFactor;
-        currentScrollX -= scrollAmount;
-        currentScrollX = Math.max(-maxScrollX, Math.min(0, currentScrollX));
+  // Mouse events
+  scrollWrapper.addEventListener('mousedown', (e) => {
+      if (maxScrollX === 0) return;
+      isDragging = true;
+      startX = e.pageX - scrollWrapper.offsetLeft;
+      scrollLeftStart = currentScrollX;
+      scrollWrapper.style.cursor = 'grabbing';
+      servicesContainer.style.transition = 'none';
+  });
 
-        servicesContainer.style.transform = `translateX(${currentScrollX}px)`;
-        updateProgressBar();
-    }
+  document.addEventListener('mousemove', (e) => {
+      if (!isDragging || maxScrollX === 0) return;
+      e.preventDefault();
+      const x = e.pageX - scrollWrapper.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      let newScrollX = scrollLeftStart + walk;
+      newScrollX = Math.max(-maxScrollX, Math.min(0, newScrollX));
+      currentScrollX = newScrollX;
+      servicesContainer.style.transform = `translateX(${currentScrollX}px)`;
+      updateProgressBar();
+  });
 
-    function updateProgressBar() {
-        if (maxScrollX === 0) {
-            progressBar.style.width = '0%';
-            return;
-        }
-        const scrollPercentage = (Math.abs(currentScrollX) / maxScrollX) * 100;
-        progressBar.style.width = `${scrollPercentage}%`;
-    }
+  document.addEventListener('mouseup', () => {
+      if (isDragging) {
+          isDragging = false;
+          scrollWrapper.style.cursor = 'grab';
+          servicesContainer.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)';
+      }
+  });
 
-    let isDragging = false;
-    let startX;
-    let scrollLeftStart;
+  // ✅ Touch events for mobile
+  scrollWrapper.addEventListener('touchstart', (e) => {
+      if (maxScrollX === 0) return;
+      isDragging = true;
+      startX = e.touches[0].pageX - scrollWrapper.offsetLeft;
+      scrollLeftStart = currentScrollX;
+      servicesContainer.style.transition = 'none';
+  });
 
-    scrollWrapper.addEventListener('mousedown', (e) => {
-        if (maxScrollX === 0) {
-            return;
-        }
-        isDragging = true;
-        startX = e.pageX - scrollWrapper.offsetLeft;
-        scrollLeftStart = currentScrollX;
-        scrollWrapper.style.cursor = 'grabbing';
-        servicesContainer.style.transition = 'none';
-    });
-    document.addEventListener('mousemove', (e) => {
-        if (!isDragging || maxScrollX === 0) return;
-        e.preventDefault();
-        const x = e.pageX - scrollWrapper.offsetLeft;
-        const walk = (x - startX) * 1.5;
-        let newScrollX = scrollLeftStart + walk;
-        newScrollX = Math.max(-maxScrollX, Math.min(0, newScrollX));
-        currentScrollX = newScrollX;
-        servicesContainer.style.transform = `translateX(${currentScrollX}px)`;
-        updateProgressBar();
-    });
+  scrollWrapper.addEventListener('touchmove', (e) => {
+      if (!isDragging || maxScrollX === 0) return;
+      const x = e.touches[0].pageX - scrollWrapper.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      let newScrollX = scrollLeftStart + walk;
+      newScrollX = Math.max(-maxScrollX, Math.min(0, newScrollX));
+      currentScrollX = newScrollX;
+      servicesContainer.style.transform = `translateX(${currentScrollX}px)`;
+      updateProgressBar();
+  });
 
-    document.addEventListener('mouseup', () => {
-        if (isDragging) {
-            isDragging = false;
-            scrollWrapper.style.cursor = 'grab';
-            servicesContainer.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)';
-        }
-    });
+  scrollWrapper.addEventListener('touchend', () => {
+      if (isDragging) {
+          isDragging = false;
+          servicesContainer.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)';
+      }
+  });
 
-
-    calculateScrollLimits();
-    window.addEventListener('resize', () => {
-        calculateScrollLimits();
-    });
-
-    scrollWrapper.addEventListener('wheel', handleWheelScroll, { passive: false });
-
+  calculateScrollLimits();
+  window.addEventListener('resize', calculateScrollLimits);
+  scrollWrapper.addEventListener('wheel', handleWheelScroll, { passive: false });
 });
+
 
 const section = document.querySelector('#home-properties-section');
 const slides = section.querySelectorAll('.properties-section-col');
