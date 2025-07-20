@@ -453,7 +453,7 @@ header .tops-menu li ul.sub-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background:linear-gradient(to top right, #370d58, rgb(96 23 153 / 0));
+    background:linear-gradient(to top right, #370d58, rgb(96 23 153 / 72%));
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
