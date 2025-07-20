@@ -840,6 +840,7 @@
   position: absolute;
   width: 100%;
   top: 0;
+  z-index: -1;
 }
 
 .references-subtitle {
@@ -1078,5 +1079,7 @@
     font-size: 18px;
   }
 
-
+  main .references-title {
+    font-size: 24px;
+  }
 }
