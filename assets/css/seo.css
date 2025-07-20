@@ -7,6 +7,12 @@
     position: absolute;
     top: -120px;
     height: 100%;
+    z-index: -1;
+}
+
+.seo-intro-row{
+  position: absolute;
+  z-index: 2;
 }
 
 .seo-intro-section {
@@ -293,6 +299,7 @@
   opacity: 1;
   pointer-events: none;
   mask-image: linear-gradient(180deg, black 90%, transparent);
+  z-index: -1;
 }
 
 @media (max-width: 1024px) {
@@ -399,6 +406,7 @@
 .reference-pattern{
   position: absolute;
   width: 100%;
+  z-index: -1;
   height: 400px;
   top: 0;
 }
@@ -693,4 +701,107 @@
     text-align: left;
     padding: 8px;
     border: 1px solid #fff
+}
+
+@media(max-width:1440px){
+  main .seo-page-title {
+    font-size: 32px;
+  }
+  
+}
+
+@media(max-width:1200px){
+  main .seo-app-text {
+      padding: 0 10%;
+  }
+
+  main .seo-app-text p {
+    font-size: 20px;
+  }
+
+  main .custom-seo-values-content{
+      top: 3%;
+  }
+
+  main .custom-seo-values-content h5{
+    font-size: 22px;
+  }
+}
+
+@media (max-width:991px) {
+
+    main #home-process-area .process-area .fixed-line {
+        left: 22px;
+        width: 8px
+    }
+
+    main #home-process-area .process-area .mini-icon {
+        left: -36px
+    }
+
+    main #home-process-area .process-area .process-row {
+        --gutter-x: 16px;
+        --gutter-x2: -16px
+    }
+
+    main #home-process-area .process-area .process-row .process-box .box-title {
+        font-size: 18px
+    }
+
+    main #home-process-area .process-area .process-row .process-box .box-text {
+        font-size: 14px
+    }
+
+    main #home-process-area .process-area .process-row{
+      margin-right: 5px;
+    }
+
+    main .accordion-title{
+      font-size: 22px;
+    }
+
+    main .section-title{
+      font-size: 32px;
+    }
+
+    main .custom-seo-values-text-editor p{
+      font-size: 18px;
+    }
+
+    main #home-process-area .process-area .process-row .flex-row .process-box {
+      margin-right: 10px;
+    }
+}
+
+@media(max-width:575px){
+  main .seo-app-text h1{
+    font-size: 24px;
+  }
+
+  main .seo-app-text p {
+      font-size: 17px;
+      line-height: 1.2;
+  }
+
+  main .seo-intro-section{
+    padding-top: 50px;
+  }
+
+  main .references-subtitle{
+    font-size: 30px;
+  }
+
+  main .references-title {
+      font-size: 25px;
+  }
+
+  main .center-btn{
+    padding: 10px 20px;
+    font-size: 17px;
+  }
+
+  main #home-process-area .process-area .fixed-line{
+    left: 26px;
+    top: 86px!important;
+  }
 }

@@ -311,7 +311,7 @@
       </g>
   </symbol>
 
-  <symbol stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" id="cross" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" >
+  <symbol stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" id="cross" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" fill="#fff">
     <line id="primary" x1="19" y1="19" x2="5" y2="5"></line>
     <line id="primary-2" data-name="primary" x1="19" y1="5" x2="5" y2="19"></line>
   </symbol>

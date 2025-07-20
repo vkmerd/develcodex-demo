@@ -35,7 +35,7 @@ typeText();
 // Sayfa kararma - section gozukme fonksiyonu
 
 
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const section = document.getElementById('banner-bottom-text');
     const titleElement = section.querySelector('.banner-bottom-title');
     const overlay = document.getElementById('dim-overlay');
@@ -72,17 +72,17 @@ typeText();
         const maxOverlayOpacity = 0.85;
         let newOverlayOpacity = 0;
 
-        const isSectionInView =
-            sectionRect.top < viewportHeight && 
-            sectionRect.bottom > 0;
+        // Karartma sadece section tamamen görünüyorsa aktif
+        const isSectionFullyVisible =
+            sectionRect.top >= 0 &&
+            sectionRect.bottom <= viewportHeight;
 
-        if (isSectionInView) {
+        if (isSectionFullyVisible) {
             newOverlayOpacity = maxOverlayOpacity;
         } else {
             newOverlayOpacity = 0;
         }
         overlay.style.backgroundColor = `rgba(0, 0, 0, ${newOverlayOpacity})`;
-
 
         const stickyTriggerScroll = sectionOriginalTop - (viewportHeight / 2) + (sectionHeight / 2);
         const animationEndScroll = stickyTriggerScroll + letterAnimationScrollDistance;
@@ -133,13 +133,14 @@ typeText();
                 letterSpans.forEach(span => span.classList.remove('thick'));
             }
             if (scrollY < stickyTriggerScroll - viewportHeight * 0.1) {
-                 letterSpans.forEach(span => span.classList.remove('thick'));
+                letterSpans.forEach(span => span.classList.remove('thick'));
             }
         }
     });
 
     window.dispatchEvent(new Event('scroll'));
 });
+
 
 
 // Services
@@ -243,15 +244,14 @@ const section = document.querySelector('#home-properties-section');
 const slides = section.querySelectorAll('.properties-section-col');
 
 function handleScrollAnimation() {
-  const sectionTop = section.offsetTop;
   const scrollY = window.scrollY;
   const winHeight = window.innerHeight;
 
-  slides.forEach((slide, i) => {
-    const start = sectionTop + (i * winHeight);
-    const end = sectionTop + ((i + 1) * winHeight);
+  slides.forEach(slide => {
+    const slideTop = slide.getBoundingClientRect().top + scrollY;
+    const slideBottom = slideTop + slide.offsetHeight;
 
-    if (scrollY >= start && scrollY < end) {
+    if (scrollY + winHeight > slideTop && scrollY < slideBottom) {
       slide.classList.add('active');
     } else {
       slide.classList.remove('active');
@@ -263,6 +263,7 @@ function handleResponsiveFeatures() {
   if (window.innerWidth >= 991) {
     section.classList.add('scroll-stacked-section');
     window.addEventListener('scroll', handleScrollAnimation);
+    handleScrollAnimation(); // sayfa yüklendiğinde de kontrol et
   } else {
     section.classList.remove('scroll-stacked-section');
     window.removeEventListener('scroll', handleScrollAnimation);
@@ -270,8 +271,9 @@ function handleResponsiveFeatures() {
   }
 }
 
-window.addEventListener('load', handleResponsiveFeatures);
+document.addEventListener('DOMContentLoaded', handleResponsiveFeatures);
 window.addEventListener('resize', handleResponsiveFeatures);
+
 
 
 
@@ -297,23 +299,49 @@ window.addEventListener("resize", () => {
   }
 });
 
-var swiper = new Swiper('.blog-swiper', {
-  loop:true,
+var blogSwiper = new Swiper('.blog-swiper', {
+  loop: true,
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 30, 
   navigation: {
     nextEl: '.swiper-blog-button-next',
     prevEl: '.swiper-blog-button-prev',
   },
   breakpoints: {
     992: {
-      slidesPerView: 3,
+      slidesPerView: 3
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 2
     },
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1
     }
   }
+});
+
+
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-custom",
+    prevEl: ".swiper-button-prev-custom",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.7,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 1.9,
+      spaceBetween: 50,
+    },
+  },
 });

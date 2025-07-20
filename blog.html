@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/blog.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="assets/css/grid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,33 +17,137 @@
 </head>
 <body>
     <div id="svg-sprite-container" style="display: none;"></div>
-    <div id="overlay"></div>
-<header class="header">
-    <div class="container">
-        <div class="header-container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
+    <div id="side-menu">
+        <div class="backdrop" onclick="closeMobileMenu();"></div>
+        <div class="content in">
+            <div onclick="closeMobileMenu();" class="close-btn">
+               <svg width="25" height="25"><use xlink:href="#cross"></use></svg>
             </div>
-            <div class="header-right">
-                <a href="#" class="header-contact-item header d-none d-lg-flex align-items-center">
-                    <svg><use xlink:href="#phone-call"></use></svg>
-                    <div class="header-contact-text">
-                        +90 542 204 33 65
-                    </div>
+            <div class="headerLogos headerLogos d-flex justify-content-center">
+                <a href="index.html" class="top-logo">
+                    <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
                 </a>
-                <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
-                    <svg><use xlink:href="#web-lang"></use></svg>
+            </div>
+            <nav class="mobile-menu">
+                <ul class="menu">
+                    <li class="mobile-menu-item">
+                        <a href="about-us.html" aria-current="page">Hakkkımda</a>
+                    </li>
+                    <li class="mobile-menu-item menu-item-has-children">
+                        <a href="#" aria-current="page">Hizmetlerimiz</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="web-software.html">Web Yazılım</a>
+                            </li>
+                            <li>
+                                <a href="mobil-uygulama.html">Mobil Uygulama</a>
+                            </li>
+                            <li>
+                                <a href="seo.html">Search Engine Optimization</a>
+                            </li>
+                            <li>
+                                <a href="social-media-ads.html">Sosyal Medya YÖnetimi</a>
+                            </li>
+                            <li>
+                                <a href="content-services.html">İçerik Yönetimi</a>
+                            </li>
+                            <li>
+                                <a href="corporate-identity.html">Kurumsal Kimlik Tasarımı</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="urunlerimiz.html" aria-current="page">Ürünlerimiz</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="iletisim.html" aria-current="page">İletişim</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-mobile-flags-item d-flex justify-content-center align-items-center">
+                <a href="#" class="header-mobile-contact-item align-items-center">
+                    <img src="assets/images/icons/english.svg" alt="">
                 </a>
-                <a href="#" class="header-contact-offer d-flex align-items-center">
-                    Teklif Al!
+                <a href="#" class="header-mobile-contact-item align-items-center">
+                    <img src="assets/images/icons/turkish.svg" alt="">
                 </a>
-                <div class="menu-icon">
-                    
-                </div>
             </div>
         </div>
     </div>
-</header>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
+                </div>
+                <div class="header-right">
+                    <ul class="main-menu tops-menu d-none d-lg-flex">
+                        <li class="menu-item">
+                            <a href="about-us.html">Hakkımızda</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="referanslar.html">Referanslar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" >Hizmetlerimiz</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="web-software.html">Web Yazılım</a>
+                                </li>
+                                <li>
+                                    <a href="mobil-uygulama.html">Mobil Uygulama</a>
+                                </li>
+                                <li>
+                                    <a href="seo.html">Search Engine Optimization</a>
+                                </li>
+                                <li>
+                                    <a href="social-media-ads.html">Sosyal Medya YÖnetimi</a>
+                                </li>
+                                <li>
+                                    <a href="content-services.html">İçerik Yönetimi</a>
+                                </li>
+                                <li>
+                                    <a href="corporate-identity.html">Kurumsal Kimlik Tasarımı</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="urunlerimiz.html">Ürünlerimiz</a>
+                        </li>
+                         <li class="menu-item">
+                            <a href="iletisim.html">İletişim</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="header-contact-item header d-none d-lg-flex align-items-center">
+                        <svg><use xlink:href="#phone-call"></use></svg>
+                        <div class="header-contact-text">
+                            +90 542 204 33 65
+                        </div>
+                    </a>
+                    <div class="header-flags-item d-flex align-items-center">
+                        <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
+                            <img src="assets/images/icons/english.svg" alt="">
+                        </a>
+                        <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
+                            <img src="assets/images/icons/turkish.svg" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="header-contact-offer d-none d-mb-flex align-items-center">
+                        Teklif Al!
+                    </a>
+                    <a href="javascript:;" onclick="openMobileMenu()" class="menu-icons mobile-hamburger-menu d-block d-lg-none">
+                        <div class="hamburger-menu"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
 <main>
@@ -66,23 +170,6 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-lg-12 blog-col mb-6">
-                            <a href="#" class="blog-box">
-                                <div class="blog-head">
-                                    <img src="/assets/images/blog-thumb.jpg" alt="" class="blog-thumb img-full">
-                                    <h2 class="blog-title">Responsive Tasarım Nedir? Siteniz Neden Mobil Uyumlu Olmalı?</h2>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-head d-flex">
-                                        <div class="blog-content-head-item">19 Mayıs 2025</div>
-                                        <div class="blog-content-head-item">Web</div>
-                                        <div class="blog-content-head-item">5 dk. Okuma</div>
-                                        <div class="blog-content-head-item">2006 View</div>
-                                    </div>
-                                    <div class="blog-content-desc">Responsive Tasarım Nedir? Siteniz Neden Mobil Uyumlu Olmalı?Günümüzde internet kullanıcılarının büyük çoğunluğu web sitelerine mobil cihazlar üzerinden erişiyor. Akıllı telefonlar, tabletler ve hatta akıllı televizyonlar üzerinden web sitelerine erişim sağlanması artık standart hale geldi. Bu değişen kullanıcı alışkanlıkları, web sitelerinin her ekran boyutuna ve cihaza uyum sağlayacak şekilde tasarlanmasını zorunlu kılıyor. İşte bu noktada </div>
-                                </div>
-                            </a>
-                        </div>
                         <div class="col-lg-12 blog-col mb-6">
                             <a href="#" class="blog-box">
                                 <div class="blog-head">
@@ -402,5 +489,6 @@
 <script src="/assets/js/home.js"></script>
 <script src="/assets/js/footer.js"></script>
 <script src="/assets/js/blog.js"></script>
+<script src="/assets/js/header.js"></script>
 </body>
 </html>

@@ -53,6 +53,7 @@
 #banner{
     position: relative;
     top: -107px;
+    margin-bottom: -107px;
 }
 
 #banner .banner-right-img {
@@ -66,16 +67,17 @@
     font-weight: 200;
 }
 
-#banner-typewriter::after {
-  content: '|';
-  animation: blink 0.7s infinite;
-}
-
 #banner-typewriter {
     color: #fff;
     margin-top: 15px;
     font-size: 70px;
     font-weight: 700;
+    line-height: 1.2;
+}
+
+#banner-typewriter::after {
+  content: '|';
+  animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
@@ -117,7 +119,7 @@
     background-color: rgba(0, 0, 0, 0);
     z-index: 998;
     pointer-events: none;
-    transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease;
 }
 
 #sticky-wrapper {
@@ -935,7 +937,7 @@
         animation: none;
     }
     main #home-services{
-        padding: 0px;
+        padding: 70px 15px;
     }
     main #home-develcodex-worlds .blog-date-content {
         gap: 10px;
@@ -946,7 +948,7 @@
     }
 
     main #home-references {
-        padding: 70px 0;
+        padding: 70px 15px;
         position: relative;
     }
 
@@ -955,7 +957,7 @@
     }
 
     main #home-develcodex-worlds {
-        padding: 60px 0;
+        padding: 60px 15px;
         background-position: top;
     }
     body footer .footer-menu{

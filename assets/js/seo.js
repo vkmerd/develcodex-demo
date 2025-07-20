@@ -145,7 +145,7 @@ header.addEventListener("click", () => {
   header.classList.toggle("active");
 
   if (content.classList.contains("active")) {
-    content.style.height = 0;
+    content.style.height = "0";
     content.classList.remove("active");
   } else {
     content.style.height = content.scrollHeight + "px";

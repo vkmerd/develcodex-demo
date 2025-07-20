@@ -45,7 +45,6 @@
   margin: 0 auto 4.5rem;
   width: 100%;
   max-width: 1680px;
-  padding: 0 1.875rem;
 }
 
 .custom-text-editor {
@@ -228,6 +227,7 @@
   object-fit: contain;
   object-position: top;
   opacity: 1;
+  z-index: -1;
   pointer-events: none;
   mask-image: linear-gradient(180deg, black 90%, transparent);
 }
@@ -438,6 +438,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    margin-top: 20px;
 }
 
 .social-media-stages__step {
@@ -446,7 +447,7 @@
 }
 
 .social-media-stages__step-inner {
-    padding: 10px 40px 50px;
+    padding: 10px;
     transition: all 0.5s ease-in;
     position: relative;
 }
@@ -794,4 +795,142 @@
   color: white;
   line-height: 1.6;
   font-size: 18px;
+}
+
+
+@media (max-width:1440px) {
+  main .development-title{
+    font-size: 48px;
+  }
+
+  main #development-desc{
+    font-size: 24px;
+  }
+
+  main .about-slogan-text{
+    font-size: 48px;
+  }
+
+  main .social-media-stages_desc{
+    font-size: 24px;
+  }
+
+  main #social-media-services .social-media-home-title{
+    font-size: 48px;
+  }
+}
+
+@media (max-width:1200px) {
+  main #social-media-services {
+    padding: 60px 20px;
+  }
+
+  main .social-media-mindmap-desc{
+    font-size: 22px;
+  }
+
+  main .mindmap-flex{
+    flex-direction: column;
+  }
+
+  main .mindmap-text{
+    padding: 20px 40px 80px 40px;
+  }
+
+  main .social-media-home-desc{
+    font-size: 18px;
+  }
+
+  main #social-media-mindmap{
+    padding: 40px 0;
+  }
+}
+
+@media (max-width:991px) {
+
+  main .custom-text-wrapper{
+    padding: 35px 20px 0 20px;
+  }
+  main .development-title {
+      font-size: 36px;
+  }
+
+  main .about-slogan-text {
+    font-size: 36px;
+  }
+
+  main #about-slogan{
+    padding: 10px 0;
+  }
+
+  main .center-card{
+    transform: scale(1);
+  }
+
+  main .social-media-stages__steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main #social-media-services .social-media-home-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  main .social-media-home-desc{
+    text-align: center;
+  }
+
+  main .social-media-mindmap-title{
+    font-size: 36px;
+  }
+
+  main .social-media-mindmap-desc {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:768px) {
+  main .social-media-ads-card{
+    padding: 1rem;
+  }
+
+  main .social-media-ads-grid{
+    flex-direction: column;
+  }
+
+  main .social-media-stages_desc {
+    font-size: 17px;
+  }
+
+  main .social-media-stages__title{
+    font-size: 32px;
+  }
+
+  main .development-title {
+    font-size: 24px;
+  }
+
+  main #development-desc {
+    font-size: 18px;
+  }
+
+  main .about-slogan-text{
+    font-size: 24px;
+  }
+
+  main .social-media-stages__title{
+    font-size: 24px;
+  }
+
+  main .social-media-col{
+    width: 320px;
+  }
+}
+
+@media (max-width:500px) {
+    main .social-media-stages__steps {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
 }

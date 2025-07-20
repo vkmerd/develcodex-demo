@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="stylesheet" href="/assets/css/web-development.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="/assets/css/grid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,66 @@
 </head>
 <body>
     <div id="svg-sprite-container" style="display: none;"></div>
+
+    <div id="side-menu">
+        <div class="backdrop" onclick="closeMobileMenu();"></div>
+        <div class="content in">
+            <div onclick="closeMobileMenu();" class="close-btn">
+            <svg width="25" height="25"><use xlink:href="#cross"></use></svg>
+            </div>
+            <div class="headerLogos headerLogos d-flex justify-content-center">
+                <a href="index.html" class="top-logo">
+                    <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
+                </a>
+            </div>
+            <nav class="mobile-menu">
+                <ul class="menu">
+                    <li class="mobile-menu-item">
+                        <a href="about-us.html" aria-current="page">Hakkkımda</a>
+                    </li>
+                    <li class="mobile-menu-item menu-item-has-children">
+                        <a href="#" aria-current="page">Hizmetlerimiz</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="web-software.html">Web Yazılım</a>
+                            </li>
+                            <li>
+                                <a href="mobil-uygulama.html">Mobil Uygulama</a>
+                            </li>
+                            <li>
+                                <a href="seo.html">Search Engine Optimization</a>
+                            </li>
+                            <li>
+                                <a href="social-media-ads.html">Sosyal Medya YÖnetimi</a>
+                            </li>
+                            <li>
+                                <a href="content-services.html">İçerik Yönetimi</a>
+                            </li>
+                            <li>
+                                <a href="corporate-identity.html">Kurumsal Kimlik Tasarımı</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="urunlerimiz.html" aria-current="page">Ürünlerimiz</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="iletisim.html" aria-current="page">İletişim</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-mobile-flags-item d-flex justify-content-center align-items-center">
+                <a href="#" class="header-mobile-contact-item align-items-center">
+                    <img src="assets/images/icons/english.svg" alt="">
+                </a>
+                <a href="#" class="header-mobile-contact-item align-items-center">
+                    <img src="assets/images/icons/turkish.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
     <header class="header">
         <div class="container">
             <div class="header-container d-flex justify-content-between align-items-center">
@@ -23,663 +83,817 @@
                     <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
                 </div>
                 <div class="header-right">
+                    <ul class="main-menu tops-menu d-none d-lg-flex">
+                        <li class="menu-item">
+                            <a href="about-us.html">Hakkımızda</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="referanslar.html">Referanslar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" >Hizmetlerimiz</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="web-software.html">Web Yazılım</a>
+                                </li>
+                                <li>
+                                    <a href="mobil-uygulama.html">Mobil Uygulama</a>
+                                </li>
+                                <li>
+                                    <a href="seo.html">Search Engine Optimization</a>
+                                </li>
+                                <li>
+                                    <a href="social-media-ads.html">Sosyal Medya YÖnetimi</a>
+                                </li>
+                                <li>
+                                    <a href="content-services.html">İçerik Yönetimi</a>
+                                </li>
+                                <li>
+                                    <a href="corporate-identity.html">Kurumsal Kimlik Tasarımı</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="urunlerimiz.html">Ürünlerimiz</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="iletisim.html">İletişim</a>
+                        </li>
+                    </ul>
                     <a href="#" class="header-contact-item header d-none d-lg-flex align-items-center">
                         <svg><use xlink:href="#phone-call"></use></svg>
                         <div class="header-contact-text">
                             +90 542 204 33 65
                         </div>
                     </a>
-                    <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
-                        <svg><use xlink:href="#web-lang"></use></svg>
-                    </a>
-                    <a href="#" class="header-contact-offer d-flex align-items-center">
+                    <div class="header-flags-item d-flex align-items-center">
+                        <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
+                            <img src="assets/images/icons/english.svg" alt="">
+                        </a>
+                        <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
+                            <img src="assets/images/icons/turkish.svg" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="header-contact-offer d-none d-mb-flex align-items-center">
                         Teklif Al!
                     </a>
-                    <div class="menu-icon">
-                        
-                    </div>
+                    <a href="javascript:;" onclick="openMobileMenu()" class="menu-icons mobile-hamburger-menu d-block d-lg-none">
+                        <div class="hamburger-menu"></div>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
-    <section class="web-software-intro-section">
-        <div class="custom-pin-spacer">
-            <div class="custom-prolog-wrapper">
-            <div class="custom-text-wrapper">
-                <img 
-                class="custom-bg-image"
-                src="https://cdn.pentayazilim.com/assets/image/other/1199.webp"
-                alt="1199.webp" loading="lazy"
-                />
+        <section class="web-software-intro-section">
+            <div class="custom-pin-spacer">
+                <div class="custom-prolog-wrapper">
+                <div class="custom-text-wrapper">
+                    <img 
+                    class="custom-bg-image"
+                    src="https://cdn.pentayazilim.com/assets/image/other/1199.webp"
+                    alt="1199.webp" loading="lazy"
+                    />
 
-                <div class="custom-wrapper">
-                <div class="custom-text-editor">
-                    <h2 class="development-title">Türkiye'nin<br>Yazılım Firması</h2>
-                    <h3 id="development-typewriter"></h3>
-                </div>
-
-                <div class="custom-page-location">
-                    <a href="https://www.pentayazilim.com" class="custom-breadcrumb">Anasayfa</a>
-                    <div class="custom-breadcrumb-separator">/</div>
-                    <a href="https://www.pentayazilim.com/web-yazilim/" class="custom-breadcrumb">Web Yazılım</a>
-                </div>
-                </div>
-            </div>
-
-            <div class="custom-background-video">
-                <div class="custom-bg-overlay"></div>
-                <div class="custom-bg-video-wrapper">
-                <video class="custom-bg-video" autoplay loop muted playsinline></video>
-                </div>
-            </div>
-
-            <div class="custom-video-wrapper">
-                <img class="custom-video-overlay" src="https://cdn.pentayazilim.com/assets/image/other/1149.webp" alt="1149.webp" loading="lazy">
-                <img class="custom-main-video-image" src="https://cdn.pentayazilim.com/assets/image/other/1148.webp" alt="Black Screen" loading="lazy">
-
-                <div id="animated-text-reveal" class="animated-text-reveal">
-                    <span>Baştan sona özelleştirilmiş bir web sitesi, işinizi kolaylaştıracak entegre sistemler, kullanıcı dostu bir e-ticaret platformu ya da bir startup projesi; yazılıma dair hayal ettiğiniz her şeyi bizimle gerçeğe dönüştürme imkanına sahipsiniz.</span>
-                </div>
-            </div>
-
-
-
-
-            <div class="custom-slogan-wrapper">
-                <div class="custom-slogan-inner">
-                <div class="custom-slogan">
-                    <p>
-                    <span class="custom-gradient-text" id="animated-slogan-text">
-                        Baştan sona özelleştirilmiş bir web sitesi, işinizi kolaylaştıracak entegre sistemler, kullanıcı dostu bir e-ticaret platformu ya da bir startup projesi; yazılıma dair hayal ettiğiniz her şeyi bizimle gerçeğe dönüştürme imkanına sahipsiniz.
-                    </span>
-                    </p>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="web-software-multi-section" class="horizontal-sections">
-        <section id="web-software-services" class="container-fluid horizontal-section">
-        <div class="row justify-content-center">
-            <div class="col-xl-11">
-                <div class="row justify-content-between">
-                    <div class="col-xl-2 web-software-services-title-col">
-                        <h2 class="web-software-services-title">Hizmetlerimiz</h2>
+                    <div class="custom-wrapper">
+                    <div class="custom-text-editor">
+                        <h2 class="development-title">Türkiye'nin<br>Yazılım Firması</h2>
+                        <h3 id="development-typewriter"></h3>
                     </div>
-                    <div class="col-xl-10">
-                        <div class="row justify-content-between">
-                            <div class="web-software-services-col mb-3
-                            col-md-4">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+
+                    <div class="custom-page-location">
+                        <a href="https://www.pentayazilim.com" class="custom-breadcrumb">Anasayfa</a>
+                        <div class="custom-breadcrumb-separator">/</div>
+                        <a href="https://www.pentayazilim.com/web-yazilim/" class="custom-breadcrumb">Web Yazılım</a>
+                    </div>
+                    </div>
+                </div>
+
+                        <section id="software-grid">
+                            <div class="container">
+                                <div class="software-grid-container">
+                                    <div class="card title-card">
+                                        <h1>Social Media <span>10x</span> <em>Faster</em> with AI</h1>
+                                        <img src="https://filipangel.github.io/bento-grid/assets/images/illustration-five-stars.webp" alt="five stars">
+                                        <p>Over 4,000 5-star reviews</p>
                                     </div>
-                                </div>                                
-                            </div>
-                            <div class="web-software-services-col mb-3
-                            col-md-4">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+                                    <div class="card platforms-card">
+                                        <img src="https://filipangel.github.io/bento-grid/assets/images/illustration-multiple-platforms.webp" alt="account on instagram and x">
+                                        <h2>Manage multiple accounts and platforms.</h2>
                                     </div>
-                                </div>                                
-                            </div>
-                            <div class="web-software-services-col mb-3
-                            col-md-4">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+                                    <div class="card posting-card">
+                                        <h2>Maintain a consistent posting schedule.</h2>
+                                        <img src="https://filipangel.github.io/bento-grid/assets/images/illustration-consistent-schedule.webp" alt="calendar with days selected">
                                     </div>
-                                </div>                                
-                            </div>
-                            <div class="web-software-services-col mb-3
-                            col-md-4">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+                                    <div class="card schedule-card">
+                                        <h2>Schedule to social media.</h2>
+                                        <img src="https://filipangel.github.io/bento-grid/assets/images/illustration-schedule-posts.webp" alt="best time to post chart">
+                                        <p>Optimize post timings to publish content at the perfect time for your audience.</p>
                                     </div>
-                                </div>                                
-                            </div>
-                            <div class="web-software-services-col mb-3
-                            col-md-4 mb-3">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+                                    <div class="card grow-card">
+                                        <img src="https://filipangel.github.io/bento-grid/assets/images/illustration-grow-followers.webp" alt="growing follower chart">
+                                        <h2>Grow followers with non-stop content.</h2>
                                     </div>
-                                </div>                                
-                            </div>
-                            <div class="web-software-services-col mb-3
-                            col-md-4 mb-3">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+                                    <div class="card growth-card">
+                                        <h1>&gt;56%</h1>
+                                        <p>faster audience growth</p>
+                                        <img src="https://filipangel.github.io/bento-grid/assets/images/illustration-audience-growth.webp" alt="avatars">
                                     </div>
-                                </div>                                
-                            </div>
-                            <div class="web-software-services-col mb-3
-                            col-md-4 mb-3">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+                                    <div class="card quicker-card">
+                                        <h2>Create and schedule content <span>quicker.</span></h2>
+                                        <img src="https://filipangel.github.io/bento-grid/assets/images/illustration-create-post.webp" alt="create post button">
                                     </div>
-                                </div>                                
-                            </div>
-                            <div class="web-software-services-col mb-3
-                            col-md-4 mb-3">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+                                    <div class="card ai-card">
+                                        <h2>Write your content using AI.</h2>
+                                        <img src="https://filipangel.github.io/bento-grid/assets/images/illustration-ai-content.webp" alt="chat with ai">
                                     </div>
-                                </div>                                
                             </div>
-                            <div class="web-software-services-col mb-3
-                            col-md-4 mb-3">
-                                <div class="web-software-services-content-area d-flex flex-column align-items-center">
-                                    <div class="web-software-services-content">
-                                        <h2 class="web-software-services-content-title">Hizmet</h2>
-                                        <p class="web-software-services-content-desc">
-                                            Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
-                                        </p>
+                            </div>
+                        </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="web-software-multi-section" class="horizontal-sections">
+            <section id="web-software-services" class="container-fluid horizontal-section">
+            <div class="row justify-content-center">
+                <div class="col-xl-11">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-2 web-software-services-title-col">
+                            <h2 class="web-software-services-title">Hizmetlerimiz</h2>
+                        </div>
+                        <div class="col-xl-10">
+                            <div class="row justify-content-between">
+                                <div class="web-software-services-col mb-3
+                                col-md-4">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="web-software-services-col mb-3
+                                col-md-4">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="web-software-services-col mb-3
+                                col-md-4">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="web-software-services-col mb-3
+                                col-md-4">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="web-software-services-col mb-3
+                                col-md-4 mb-3">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="web-software-services-col mb-3
+                                col-md-4 mb-3">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="web-software-services-col mb-3
+                                col-md-4 mb-3">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="web-software-services-col mb-3
+                                col-md-4 mb-3">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="web-software-services-col mb-3
+                                col-md-4 mb-3">
+                                    <div class="web-software-services-content-area d-flex flex-column align-items-center">
+                                        <div class="web-software-services-content">
+                                            <h2 class="web-software-services-content-title">Hizmet</h2>
+                                            <p class="web-software-services-content-desc">
+                                                Dinamik pazar koşullarına hızla uyum sağlayan, satışlarınızı artırmak ve müşteri deneyimini iyileştirmek için tasarlanmış e-ticaret platformları oluşturuyoruz. Güvenli ödeme altyapısı ve entegre stok yönetimi ile işletmenizi bir üst seviyeye taşıyoruz.
+                                            </p>
+                                        </div>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section id="web-software-programming-languages" class="horizontal-section">
+                <img src="/assets/images/web-software-pattern.webp" class="web-software-pattern">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10 programming-col">
+                            <div class="web-software-area-title">
+                                <div class="web-software-programming-subtitle">Kullandığımız</div>
+                                <div class="web-software-programming-title">Teknolojiler</div>
+                                <div class="web-software-programming-desc"> Projelerimizde en iyi sonuçları elde etmek için aşağıdaki modern <br> yazılım dillerini kullanıyoruz</div>
+                            </div>
+                            <div class="programmingSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
+                                    <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
+                                        <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
+                                        <div class="web-software-programmer-title">JQUERY</div>
                                     </div>
-                                </div>                                
+                                    <div class="web-software-programmer-desc">
+                                        jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
+                                    </div>
+                                    </div>
+
+                                    <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
+                                    <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
+                                        <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
+                                        <div class="web-software-programmer-title">JQUERY</div>
+                                    </div>
+                                    <div class="web-software-programmer-desc">
+                                        jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
+                                    </div>
+                                    </div>
+
+                                    <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
+                                    <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
+                                        <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
+                                        <div class="web-software-programmer-title">JQUERY</div>
+                                    </div>
+                                    <div class="web-software-programmer-desc">
+                                        jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
+                                    </div>
+                                    </div>
+
+                                    <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
+                                    <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
+                                        <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
+                                        <div class="web-software-programmer-title">JQUERY</div>
+                                    </div>
+                                    <div class="web-software-programmer-desc">
+                                        jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
+                                    </div>
+                                    </div>
+
+                                    <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
+                                    <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
+                                        <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
+                                        <div class="web-software-programmer-title">JQUERY</div>
+                                    </div>
+                                    <div class="web-software-programmer-desc">
+                                        jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
+                                    </div>
+                                    </div>
+
+                                    <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
+                                    <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
+                                        <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
+                                        <div class="web-software-programmer-title">JQUERY</div>
+                                    </div>
+                                    <div class="web-software-programmer-desc">
+                                        jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
+                                    </div>
+                                    </div>
+                                </div>
+
                             </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="team-section">
+        <img class="team-background-image" src="https://cdn.pentayazilim.com/assets/image/other/1174.webp" alt="1174.webp" loading="lazy">
+        <div class="team-container">
+            <div class="team-web-view">
+                <div class="team-wrapper">
+                    <div class="team-editor">
+                        <h4 class="team-title"><span class="team-title-span">Ekibimizin</span> Uzmanlığı</h4>
+                    </div>
+                    <div class="team-content-wrapper">
+                        <div class="team-light-top-field">
+                            <div class="svg-wrapper">
+                                <svg class="mx-auto w-85/100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1192.7 267.38">
+                                    <g id="lines">
+                                        <path class="svg-line line-1" d="M572,2.23v140.87c0,9.76-2.14,30.22-29.29,30.22H29.43c-9.14-0.15-27.43,5.11-27.43,27.43v50.68" stroke-width="2" fill="none" stroke="#fff"></path>
+                                        <path class="svg-line line-2" d="M581.3,12.46v140.87c0,9.76-2.14,30.22-29.29,30.22H271.2c-9.14-0.15-27.43,5.11-27.43,27.43v43.7" stroke-width="2" fill="none" stroke="#fff"></path>
+                                        <path class="svg-line line-3" d="M592.92,11.53v140.87c0,13.48-2.05,39.05-38.12,39.05H496.68c-6.2,0.77-18.6,7.72-18.6,29.29v44.63" stroke-width="2" fill="none" stroke="#fff"></path>
+                                        <path class="svg-line line-4" d="M714.61,265.14v-44.63c0-21.57-12.4-28.51-18.6-29.29h-58.12c-36.08,0-38.12-25.57-38.12-39.05V11.3" stroke-width="2" fill="none" stroke="#fff"></path>
+                                        <path class="svg-line line-5" d="M948.93,254.45v-43.7c0-22.32-18.29-27.59-27.43-27.43H640.69c-27.15,0-29.29-20.46-29.29-30.22V12.23" stroke-width="2" fill="none" stroke="#fff"></path>
+                                        <path class="svg-line line-6" d="M1190.7,251.2v-50.68c0-22.32-18.29-27.59-27.43-27.43H649.99c-27.15,0-29.29-20.46-29.29-30.22V2" stroke-width="2" fill="none" stroke="#fff"></path>
+                                    </g>
+                                    <g id="fills">
+                                        <path class="svg-fill fill-1" d="M572,2.23v140.87c0,34.49-29.29,30.22-29.29,30.22H29.43c-27.79,0-27.43,27.43-27.43,27.43v50.68" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
+                                        <path class="svg-fill fill-2" d="M581.3,12.46v140.87c0,33.28-29.29,30.22-29.29,30.22H271.2c-32.03,0-27.43,35.05-27.43,35.05v35.93" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
+                                        <path class="svg-fill fill-3" d="M592.92,11.53v140.87c0,13.48-2.05,39.05-38.12,39.05H496.68s-18.6,3.09-18.6,29.29v44.63" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
+                                        <path class="svg-fill fill-4" d="M714.62,265.14v-44.63c0-26.2-18.6-29.29-18.6-29.29h-58.11c-36.08,0-38.12-25.57-38.12-39.05V11.3" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
+                                        <path class="svg-fill fill-5" d="M948.94,254.29v-35.93s4.6-35.05-27.43-35.05H640.7s-29.29,3.06-29.29-30.22V12.23" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
+                                        <path class="svg-fill fill-6" d="M1190.7,251.2v-50.68s.36-27.43-27.43-27.43H649.99s-29.29,4.27-29.29-30.22V2" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="team-light-wrapper">
+                            <div class="team-grid">
+                                <!-- Kartlar -->
+                                <div class="team-item" data-line="1">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-icon">
+                                            <div class="team-item-image">
+                                                <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                                            </div>
+                                        </div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item" data-line="2">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-icon">
+                                            <div class="team-item-image">
+                                                <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                                            </div>
+                                        </div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item" data-line="3">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-icon">
+                                            <div class="team-item-image">
+                                                <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                                            </div>
+                                        </div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item" data-line="4">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-icon">
+                                            <div class="team-item-image">
+                                                <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                                            </div>
+                                        </div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item" data-line="5">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-icon">
+                                            <div class="team-item-image">
+                                                <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                                            </div>
+                                        </div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item" data-line="6">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-icon">
+                                            <div class="team-item-image">
+                                                <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                                            </div>
+                                        </div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Diğer Kartlar -->
+                            </div>
+                        </div>
+                        <div class="team-light-detail-wrapper">
+                            <div class="team-light-detail-inner">
+                                <!-- Detay itemlar -->
+                                <div class="team-light-detail-item active">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                            <div class="team-item-desc">
+                                                <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-light-detail-item active">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                            <div class="team-item-desc">
+                                                <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-light-detail-item active">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                            <div class="team-item-desc">
+                                                <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-light-detail-item active">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                            <div class="team-item-desc">
+                                                <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-light-detail-item active">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                            <div class="team-item-desc">
+                                                <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-light-detail-item active">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                            <div class="team-item-desc">
+                                                <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Diğer detay itemlar -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-mobile-view">
+                <div class="team-wrapper">
+                    <div class="team-editor">
+                        <h4 class="team-title"><span class="team-title-span">Ekibimizin</span> Uzmanlığı</h4>
+                    </div>
+                    <div class="team-carousel">
+                        <div class="team-carousel-swiper">
+                            <div class="team-carousel-item">
+                                <div class="team-light-detail-item">
+                                    <div class="team-item-content">
+                                        <div class="team-item-bg"></div>
+                                        <div class="team-item-icon">
+                                            <div class="team-item-image">
+                                                <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                                            </div>
+                                        </div>
+                                        <div class="team-item-text">
+                                            <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
+                                            <div class="team-item-desc">
+                                                <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Diğer Mobile Kartlar -->
+                        </div>
+                        <div class="team-carousel-controller">
+                            <div class="team-carousel-prev"></div>
+                            <div class="team-carousel-next"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         </section>
-        <section id="web-software-programming-languages" class="horizontal-section">
-            <img src="/assets/images/web-software-pattern.webp" class="web-software-pattern">
+
+        <section id="development-center-section">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-10">
-                        <div class="web-software-area-title">
-                            <div class="web-software-programming-subtitle">Kullandığımız</div>
-                            <div class="web-software-programming-title">Teknolojiler</div>
-                            <div class="web-software-programming-desc"> Projelerimizde en iyi sonuçları elde etmek için aşağıdaki modern <br> yazılım dillerini kullanıyoruz</div>
-                        </div>
-                        <div class="web-software-programmer-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
-                                <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
-                                    <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
-                                    <div class="web-software-programmer-title">JQUERY</div>
-                                </div>
-                                <div class="web-software-programmer-desc">
-                                    jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
-                                </div>
-                                </div>
-
-                                <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
-                                <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
-                                    <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
-                                    <div class="web-software-programmer-title">JQUERY</div>
-                                </div>
-                                <div class="web-software-programmer-desc">
-                                    jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
-                                </div>
-                                </div>
-
-                                <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
-                                <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
-                                    <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
-                                    <div class="web-software-programmer-title">JQUERY</div>
-                                </div>
-                                <div class="web-software-programmer-desc">
-                                    jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
-                                </div>
-                                </div>
-
-                                <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
-                                <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
-                                    <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
-                                    <div class="web-software-programmer-title">JQUERY</div>
-                                </div>
-                                <div class="web-software-programmer-desc">
-                                    jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
-                                </div>
-                                </div>
-
-                                <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
-                                <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
-                                    <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
-                                    <div class="web-software-programmer-title">JQUERY</div>
-                                </div>
-                                <div class="web-software-programmer-desc">
-                                    jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
-                                </div>
-                                </div>
-
-                                <div class="web-software-programmer-box swiper-slide d-flex flex-column align-items-center">
-                                <div class="web-software-programmer-image-box d-flex flex-column align-items-center">
-                                    <img src="assets/images/jquery.webp" class="web-software-programmer-image" alt="jQuery" />
-                                    <div class="web-software-programmer-title">JQUERY</div>
-                                </div>
-                                <div class="web-software-programmer-desc">
-                                    jQuery hızlı, küçük ve zengin özelliklere sahip bir JavaScript kütüphanesidir. Çok sayıda tarayıcıda çalışan kullanımı kolay bir API ile HTML belge geçişi ve manipülasyonu, olay işleme, animasyon ve Ajax gibi şeyleri çok daha basit hale getirir.
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="assets/images/illustration-stay-productive.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="development-center-title">Lorem ipsum dolor sit amet consectetur</div>
+                        <div class="development-center-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non autem omnis laborum eos voluptas laudantium dolores officia corrupti quas culpa.</div>
+                        <a href="#" class="development-center-link">Başla</a>
                     </div>
                 </div>
             </div>
         </section>
-    </section>
 
-
-<section class="team-section">
-<img class="team-background-image" src="https://cdn.pentayazilim.com/assets/image/other/1174.webp" alt="1174.webp" loading="lazy">
-<div class="team-container">
-    <div class="team-web-view">
-        <div class="team-wrapper">
-            <div class="team-editor">
-                <h4 class="team-title"><span class="team-title-span">Ekibimizin</span> Uzmanlığı</h4>
-            </div>
-            <div class="team-content-wrapper">
-                <div class="team-light-top-field">
-                    <div class="svg-wrapper">
-                        <svg class="mx-auto w-85/100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1192.7 267.38">
-                            <g id="lines">
-                                <path class="svg-line line-1" d="M572,2.23v140.87c0,9.76-2.14,30.22-29.29,30.22H29.43c-9.14-0.15-27.43,5.11-27.43,27.43v50.68" stroke-width="2" fill="none" stroke="#fff"></path>
-                                <path class="svg-line line-2" d="M581.3,12.46v140.87c0,9.76-2.14,30.22-29.29,30.22H271.2c-9.14-0.15-27.43,5.11-27.43,27.43v43.7" stroke-width="2" fill="none" stroke="#fff"></path>
-                                <path class="svg-line line-3" d="M592.92,11.53v140.87c0,13.48-2.05,39.05-38.12,39.05H496.68c-6.2,0.77-18.6,7.72-18.6,29.29v44.63" stroke-width="2" fill="none" stroke="#fff"></path>
-                                <path class="svg-line line-4" d="M714.61,265.14v-44.63c0-21.57-12.4-28.51-18.6-29.29h-58.12c-36.08,0-38.12-25.57-38.12-39.05V11.3" stroke-width="2" fill="none" stroke="#fff"></path>
-                                <path class="svg-line line-5" d="M948.93,254.45v-43.7c0-22.32-18.29-27.59-27.43-27.43H640.69c-27.15,0-29.29-20.46-29.29-30.22V12.23" stroke-width="2" fill="none" stroke="#fff"></path>
-                                <path class="svg-line line-6" d="M1190.7,251.2v-50.68c0-22.32-18.29-27.59-27.43-27.43H649.99c-27.15,0-29.29-20.46-29.29-30.22V2" stroke-width="2" fill="none" stroke="#fff"></path>
-                            </g>
-                            <g id="fills">
-                                <path class="svg-fill fill-1" d="M572,2.23v140.87c0,34.49-29.29,30.22-29.29,30.22H29.43c-27.79,0-27.43,27.43-27.43,27.43v50.68" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
-                                <path class="svg-fill fill-2" d="M581.3,12.46v140.87c0,33.28-29.29,30.22-29.29,30.22H271.2c-32.03,0-27.43,35.05-27.43,35.05v35.93" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
-                                <path class="svg-fill fill-3" d="M592.92,11.53v140.87c0,13.48-2.05,39.05-38.12,39.05H496.68s-18.6,3.09-18.6,29.29v44.63" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
-                                <path class="svg-fill fill-4" d="M714.62,265.14v-44.63c0-26.2-18.6-29.29-18.6-29.29h-58.11c-36.08,0-38.12-25.57-38.12-39.05V11.3" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
-                                <path class="svg-fill fill-5" d="M948.94,254.29v-35.93s4.6-35.05-27.43-35.05H640.7s-29.29,3.06-29.29-30.22V12.23" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
-                                <path class="svg-fill fill-6" d="M1190.7,251.2v-50.68s.36-27.43-27.43-27.43H649.99s-29.29,4.27-29.29-30.22V2" stroke-width="4" fill="none" stroke="#fff" stroke-linecap="round"></path>
-                            </g>
-                        </svg>
-
-                    </div>
-                </div>
-                <div class="team-light-wrapper">
-                    <div class="team-grid">
-                        <!-- Kartlar -->
-                        <div class="team-item" data-line="1">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-icon">
-                                    <div class="team-item-image">
-                                        <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+        <section id="service-step-section">
+            <img src="/assets/images/services-step-pattern.webp" alt="" class="services-step-pattern">
+            
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+                        <div class="col-lg-4 step-card">
+                            <div class="step-card-inner">
+                                <div class="step-image-wrapper">
+                                <img src="https://cdn.pentayazilim.com/assets/image/other/1072.webp" alt="1072.webp" loading="lazy" class="step-image-hover">
+                                <img src="https://cdn.pentayazilim.com/media/media_item/default/188/269/conversions/1074-webp.webp" alt="1074.webp" loading="lazy" width="588" height="701" class="step-image-front">
+                                </div>
+                                <div class="step-icon-button">
+                                <div class="step-icon-container">
+                                    <div class="step-icon-bg"></div>
+                                    <div class="step-icon-horizontal"></div>
+                                    <div class="step-icon-vertical"></div>
+                                </div>
+                                </div>
+                                <div class="step-card-content">
+                                <div class="step-title">
+                                    <h3>Yazılım<br> Mükemmelliyeti</h3>
+                                </div>
+                                <div class="step-description">
+                                    <div class="step-description-inner">
+                                    <h6>Bizim için yazılım geliştirme süreci, kodun en ince ayrıntısına kadar kalite ve güvenlikle harmanlanmış bir sanattır. Sürecimiz şunları içerir:</h6>
+                                    <p><strong>Kod Analizi:</strong> <span class="text-muted">Her satırı dikkatle inceleyerek, kaynak kodun ayrıntılı bir analizini yapıyoruz.</span></p>
+                                    <p><strong>Mimari İnceleme:</strong> <span class="text-muted">Uygulamanın mimarisi, uzman gözüyle detaylı bir şekilde değerlendirilir</span></p>
+                                    <p><strong>Güvenlik Denetimi:</strong> <span class="text-muted">Potansiyel tehditleri belirlemek ve ortadan kaldırmak için, uygulamalarımızı düzenli güvenlik kontrollerinden geçiriyoruz.</span></p>
                                     </div>
                                 </div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="team-item" data-line="2">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-icon">
-                                    <div class="team-item-image">
-                                        <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                        <div class="col-lg-4 step-card">
+                            <div class="step-card-inner">
+                                <div class="step-image-wrapper">
+                                <img src="https://cdn.pentayazilim.com/assets/image/other/1072.webp" alt="1072.webp" loading="lazy" class="step-image-hover">
+                                <img src="https://cdn.pentayazilim.com/media/media_item/default/188/269/conversions/1074-webp.webp" alt="1074.webp" loading="lazy" width="588" height="701" class="step-image-front">
+                                </div>
+                                <div class="step-icon-button">
+                                <div class="step-icon-container">
+                                    <div class="step-icon-bg"></div>
+                                    <div class="step-icon-horizontal"></div>
+                                    <div class="step-icon-vertical"></div>
+                                </div>
+                                </div>
+                                <div class="step-card-content">
+                                <div class="step-title">
+                                    <h3>Yazılım<br> Mükemmelliyeti</h3>
+                                </div>
+                                <div class="step-description">
+                                    <div class="step-description-inner">
+                                    <h6>Bizim için yazılım geliştirme süreci, kodun en ince ayrıntısına kadar kalite ve güvenlikle harmanlanmış bir sanattır. Sürecimiz şunları içerir:</h6>
+                                    <p><strong>Kod Analizi:</strong> <span class="text-muted">Her satırı dikkatle inceleyerek, kaynak kodun ayrıntılı bir analizini yapıyoruz.</span></p>
+                                    <p><strong>Mimari İnceleme:</strong> <span class="text-muted">Uygulamanın mimarisi, uzman gözüyle detaylı bir şekilde değerlendirilir</span></p>
+                                    <p><strong>Güvenlik Denetimi:</strong> <span class="text-muted">Potansiyel tehditleri belirlemek ve ortadan kaldırmak için, uygulamalarımızı düzenli güvenlik kontrollerinden geçiriyoruz.</span></p>
                                     </div>
                                 </div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="team-item" data-line="3">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-icon">
-                                    <div class="team-item-image">
-                                        <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
+                        <div class="col-lg-4 step-card">
+                            <div class="step-card-inner">
+                                <div class="step-image-wrapper">
+                                <img src="https://cdn.pentayazilim.com/assets/image/other/1072.webp" alt="1072.webp" loading="lazy" class="step-image-hover">
+                                <img src="https://cdn.pentayazilim.com/media/media_item/default/188/269/conversions/1074-webp.webp" alt="1074.webp" loading="lazy" width="588" height="701" class="step-image-front">
+                                </div>
+                                <div class="step-icon-button">
+                                <div class="step-icon-container">
+                                    <div class="step-icon-bg"></div>
+                                    <div class="step-icon-horizontal"></div>
+                                    <div class="step-icon-vertical"></div>
+                                </div>
+                                </div>
+                                <div class="step-card-content">
+                                <div class="step-title">
+                                    <h3>Yazılım<br> Mükemmelliyeti</h3>
+                                </div>
+                                <div class="step-description">
+                                    <div class="step-description-inner">
+                                    <h6>Bizim için yazılım geliştirme süreci, kodun en ince ayrıntısına kadar kalite ve güvenlikle harmanlanmış bir sanattır. Sürecimiz şunları içerir:</h6>
+                                    <p><strong>Kod Analizi:</strong> <span class="text-muted">Her satırı dikkatle inceleyerek, kaynak kodun ayrıntılı bir analizini yapıyoruz.</span></p>
+                                    <p><strong>Mimari İnceleme:</strong> <span class="text-muted">Uygulamanın mimarisi, uzman gözüyle detaylı bir şekilde değerlendirilir</span></p>
+                                    <p><strong>Güvenlik Denetimi:</strong> <span class="text-muted">Potansiyel tehditleri belirlemek ve ortadan kaldırmak için, uygulamalarımızı düzenli güvenlik kontrollerinden geçiriyoruz.</span></p>
                                     </div>
                                 </div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="team-item" data-line="4">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-icon">
-                                    <div class="team-item-image">
-                                        <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
-                                    </div>
-                                </div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item" data-line="5">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-icon">
-                                    <div class="team-item-image">
-                                        <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
-                                    </div>
-                                </div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-item" data-line="6">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-icon">
-                                    <div class="team-item-image">
-                                        <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
-                                    </div>
-                                </div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Diğer Kartlar -->
-                    </div>
-                </div>
-                <div class="team-light-detail-wrapper">
-                    <div class="team-light-detail-inner">
-                        <!-- Detay itemlar -->
-                        <div class="team-light-detail-item active">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                    <div class="team-item-desc">
-                                        <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-light-detail-item active">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                    <div class="team-item-desc">
-                                        <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-light-detail-item active">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                    <div class="team-item-desc">
-                                        <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-light-detail-item active">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                    <div class="team-item-desc">
-                                        <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-light-detail-item active">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                    <div class="team-item-desc">
-                                        <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team-light-detail-item active">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                    <div class="team-item-desc">
-                                        <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Diğer detay itemlar -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="team-mobile-view">
-        <div class="team-wrapper">
-            <div class="team-editor">
-                <h4 class="team-title"><span class="team-title-span">Ekibimizin</span> Uzmanlığı</h4>
-            </div>
-            <div class="team-carousel">
-                <div class="team-carousel-swiper">
-                    <div class="team-carousel-item">
-                        <div class="team-light-detail-item">
-                            <div class="team-item-content">
-                                <div class="team-item-bg"></div>
-                                <div class="team-item-icon">
-                                    <div class="team-item-image">
-                                        <img src="https://cdn.pentayazilim.com/media/media_item/default/182/263/conversions/33-webp.webp" alt="Bileşenler">
-                                    </div>
-                                </div>
-                                <div class="team-item-text">
-                                    <p class="team-item-heading">Yeniden Kullanılabilir Bileşenler</p>
-                                    <div class="team-item-desc">
-                                        <p>Yazılım geliştirme sürecinizi, modüler bileşenler ile hızlandırıyoruz.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Diğer Mobile Kartlar -->
-                </div>
-                <div class="team-carousel-controller">
-                    <div class="team-carousel-prev"></div>
-                    <div class="team-carousel-next"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-<section id="service-step-section">
-    <img src="/assets/images/services-step-pattern.webp" alt="" class="services-step-pattern">
-    
-    <div class="row justify-content-center">
-        <div class="col-xl-10">
-            <div class="row">
-                <div class="col-lg-4 step-card">
-                    <div class="step-card-inner">
-                        <div class="step-image-wrapper">
-                        <img src="https://cdn.pentayazilim.com/assets/image/other/1072.webp" alt="1072.webp" loading="lazy" class="step-image-hover">
-                        <img src="https://cdn.pentayazilim.com/media/media_item/default/188/269/conversions/1074-webp.webp" alt="1074.webp" loading="lazy" width="588" height="701" class="step-image-front">
-                        </div>
-                        <div class="step-icon-button">
-                        <div class="step-icon-container">
-                            <div class="step-icon-bg"></div>
-                            <div class="step-icon-horizontal"></div>
-                            <div class="step-icon-vertical"></div>
-                        </div>
-                        </div>
-                        <div class="step-card-content">
-                        <div class="step-title">
-                            <h3>Yazılım<br> Mükemmelliyeti</h3>
-                        </div>
-                        <div class="step-description">
-                            <div class="step-description-inner">
-                            <h6>Bizim için yazılım geliştirme süreci, kodun en ince ayrıntısına kadar kalite ve güvenlikle harmanlanmış bir sanattır. Sürecimiz şunları içerir:</h6>
-                            <p><strong>Kod Analizi:</strong> <span class="text-muted">Her satırı dikkatle inceleyerek, kaynak kodun ayrıntılı bir analizini yapıyoruz.</span></p>
-                            <p><strong>Mimari İnceleme:</strong> <span class="text-muted">Uygulamanın mimarisi, uzman gözüyle detaylı bir şekilde değerlendirilir</span></p>
-                            <p><strong>Güvenlik Denetimi:</strong> <span class="text-muted">Potansiyel tehditleri belirlemek ve ortadan kaldırmak için, uygulamalarımızı düzenli güvenlik kontrollerinden geçiriyoruz.</span></p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 step-card">
-                    <div class="step-card-inner">
-                        <div class="step-image-wrapper">
-                        <img src="https://cdn.pentayazilim.com/assets/image/other/1072.webp" alt="1072.webp" loading="lazy" class="step-image-hover">
-                        <img src="https://cdn.pentayazilim.com/media/media_item/default/188/269/conversions/1074-webp.webp" alt="1074.webp" loading="lazy" width="588" height="701" class="step-image-front">
-                        </div>
-                        <div class="step-icon-button">
-                        <div class="step-icon-container">
-                            <div class="step-icon-bg"></div>
-                            <div class="step-icon-horizontal"></div>
-                            <div class="step-icon-vertical"></div>
-                        </div>
-                        </div>
-                        <div class="step-card-content">
-                        <div class="step-title">
-                            <h3>Yazılım<br> Mükemmelliyeti</h3>
-                        </div>
-                        <div class="step-description">
-                            <div class="step-description-inner">
-                            <h6>Bizim için yazılım geliştirme süreci, kodun en ince ayrıntısına kadar kalite ve güvenlikle harmanlanmış bir sanattır. Sürecimiz şunları içerir:</h6>
-                            <p><strong>Kod Analizi:</strong> <span class="text-muted">Her satırı dikkatle inceleyerek, kaynak kodun ayrıntılı bir analizini yapıyoruz.</span></p>
-                            <p><strong>Mimari İnceleme:</strong> <span class="text-muted">Uygulamanın mimarisi, uzman gözüyle detaylı bir şekilde değerlendirilir</span></p>
-                            <p><strong>Güvenlik Denetimi:</strong> <span class="text-muted">Potansiyel tehditleri belirlemek ve ortadan kaldırmak için, uygulamalarımızı düzenli güvenlik kontrollerinden geçiriyoruz.</span></p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 step-card">
-                    <div class="step-card-inner">
-                        <div class="step-image-wrapper">
-                        <img src="https://cdn.pentayazilim.com/assets/image/other/1072.webp" alt="1072.webp" loading="lazy" class="step-image-hover">
-                        <img src="https://cdn.pentayazilim.com/media/media_item/default/188/269/conversions/1074-webp.webp" alt="1074.webp" loading="lazy" width="588" height="701" class="step-image-front">
-                        </div>
-                        <div class="step-icon-button">
-                        <div class="step-icon-container">
-                            <div class="step-icon-bg"></div>
-                            <div class="step-icon-horizontal"></div>
-                            <div class="step-icon-vertical"></div>
-                        </div>
-                        </div>
-                        <div class="step-card-content">
-                        <div class="step-title">
-                            <h3>Yazılım<br> Mükemmelliyeti</h3>
-                        </div>
-                        <div class="step-description">
-                            <div class="step-description-inner">
-                            <h6>Bizim için yazılım geliştirme süreci, kodun en ince ayrıntısına kadar kalite ve güvenlikle harmanlanmış bir sanattır. Sürecimiz şunları içerir:</h6>
-                            <p><strong>Kod Analizi:</strong> <span class="text-muted">Her satırı dikkatle inceleyerek, kaynak kodun ayrıntılı bir analizini yapıyoruz.</span></p>
-                            <p><strong>Mimari İnceleme:</strong> <span class="text-muted">Uygulamanın mimarisi, uzman gözüyle detaylı bir şekilde değerlendirilir</span></p>
-                            <p><strong>Güvenlik Denetimi:</strong> <span class="text-muted">Potansiyel tehditleri belirlemek ve ortadan kaldırmak için, uygulamalarımızı düzenli güvenlik kontrollerinden geçiriyoruz.</span></p>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
-<section id="references-section">
-    <img src="/assets/images/reference-bg.webp" alt="" class="reference-pattern">
+        <section id="home-guide-area">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="references-subtitle">Öne Çıkan</div>
-            <div class="references-title">Referanslarımız ile Tanışın</div>
+        <div class="section-title-area">
+            <div class="section-top-title">Pasien kami</div>
+            <h2 class="section-title">Panduan Pasien</h2>
         </div>
-        <div class="nav-wrapper">
-            <button class="nav-btn prev-btn swiper-button-prev-custom">←</button>
-
-            <button class="center-btn">
-                <div class="circle-gradient"></div>
-                Tüm Referanslarımız
-            </button>
-
-            <button class="nav-btn next-btn swiper-button-next-custom">→</button>
-        </div>
-    </div>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-            <a href="#" class="slide-box">
-                <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 1">
-                <h3>Başlık 1</h3>
-            </a>
-            </div>
-            <div class="swiper-slide">
-            <a href="#" class="slide-box">
-                <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 2">
-                <h3>Başlık 2</h3>
-            </a>
-            </div>
-            <div class="swiper-slide">
-            <a href="#" class="slide-box">
-                <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 3">
-                <h3>Başlık 3</h3>
-            </a>
-            </div>
-            <div class="swiper-slide">
-            <a href="#" class="slide-box">
-                <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 3">
-                <h3>Başlık 3</h3>
-            </a>
-            </div>
-            <div class="swiper-slide">
-            <a href="#" class="slide-box">
-                <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 3">
-                <h3>Başlık 3</h3>
-            </a>
-            </div>
-            <div class="swiper-slide">
-            <a href="#" class="slide-box">
-                <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 3">
-                <h3>Başlık 3</h3>
-            </a>
-            </div>
+        <div class="guide-line-area">
+            <div class="guide-list-area d-flex">
+                                    <div class="guide-box">
+                        <div class="box-inner d-flex">
+                            <div class="number-outer">
+                                <div class="box-number">1</div>
+                            </div>
+                            <div class="box-content-area d-flex">
+                                <div class="box-icon-wrapper">
+                                    <img class="box-icon d-block" src="https://crabsmedia.com.tr/mc_drademkose/wp-content/uploads/2025/04/operasyon-oncesi-icom-1.webp" alt="operasyon öncesi icom">
+                                </div>
+                                <div class="box-text-area">
+                                    <div class="box-title">Sebelum Operasi</div>
+                                    <div class="box-text">Proses persiapan sebelum transplantasi rambut sama pentingnya dengan operasi itu sendiri. Sebagai Klinik Adem Köse, kami percaya bahwa pasien yang mendapat informasi yang baik akan mendapatkan proses pemulihan yang lebih mudah dan hasil yang lebih sukses.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="guide-box">
+                        <div class="box-inner d-flex">
+                            <div class="number-outer">
+                                <div class="box-number">2</div>
+                            </div>
+                            <div class="box-content-area d-flex">
+                                <div class="box-icon-wrapper">
+                                    <img class="box-icon d-block" src="https://crabsmedia.com.tr/mc_drademkose/wp-content/uploads/2025/04/operasyon-oncesi-icom-1.webp" alt="operasyon öncesi icom">
+                                </div>
+                                <div class="box-text-area">
+                                    <div class="box-title">Setelah Operasi</div>
+                                    <div class="box-text">Perawatan yang tepat setelah transplantasi rambut sangat penting untuk keberhasilan prosedur ini dalam jangka panjang. Sebagai Klinik Adem Köse, tanggung jawab kami tidak berakhir ketika operasi selesai—tetapi terus berlanjut selama proses pemulihan Anda.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="guide-box">
+                        <div class="box-inner d-flex">
+                            <div class="number-outer">
+                                <div class="box-number">3</div>
+                            </div>
+                            <div class="box-content-area d-flex">
+                                <div class="box-icon-wrapper">
+                                    <img class="box-icon d-block" src="https://crabsmedia.com.tr/mc_drademkose/wp-content/uploads/2025/04/operasyon-oncesi-icom-1.webp" alt="operasyon öncesi icom">
+                                </div>
+                                <div class="box-text-area">
+                                    <div class="box-title">Proses Penyembuhan dan Pencucian Rambut</div>
+                                    <div class="box-text">Transplantasi rambut yang sukses tidak berakhir dengan operasi—tetapi dilanjutkan dengan proses pemulihan yang dikelola dengan baik dan rutinitas mencuci yang tepat. Sebagai Klinik Adem Köse, kami telah mengembangkan protokol perawatan komprehensif untuk penyembuhan alami kulit kepala Anda dan adhesi cangkokan yang ditransplantasikan tanpa masalah.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="guide-box">
+                        <div class="box-inner d-flex">
+                            <div class="number-outer">
+                                <div class="box-number">4</div>
+                            </div>
+                            <div class="box-content-area d-flex">
+                                <div class="box-icon-wrapper">
+                                    <img class="box-icon d-block" src="https://crabsmedia.com.tr/mc_drademkose/wp-content/uploads/2025/04/operasyon-oncesi-icom-1.webp" alt="operasyon öncesi icom">
+                                </div>
+                                <div class="box-text-area">
+                                    <div class="box-title">Bagaimana Transplantasi Rambut Dilakukan?</div>
+                                    <div class="box-text">Transplantasi rambut adalah prosedur pembedahan khusus yang dilakukan untuk mengembalikan pertumbuhan rambut alami pada area yang terkena kerontokan rambut. Dalam prosedur ini, folikel rambut yang sehat diambil dari area donor dan ditransplantasikan ke area yang menipis atau botak, sehingga memberikan solusi permanen dan alami.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+            <div class="line"></div>
         </div>
     </div>
 </section>
+
+
+        <section id="references-section">
+            <img src="/assets/images/reference-bg.webp" alt="" class="reference-pattern">
+            <div class="container">
+                <div class="d-flex flex-column">
+                    <div class="references-subtitle">Öne Çıkan</div>
+                    <div class="references-title">Referanslarımız ile Tanışın</div>
+                </div>
+                <div class="nav-wrapper">
+                    <button class="nav-btn prev-btn swiper-button-prev-custom">←</button>
+
+                    <button class="center-btn">
+                        <div class="circle-gradient"></div>
+                        Tüm Referanslarımız
+                    </button>
+
+                    <button class="nav-btn next-btn swiper-button-next-custom">→</button>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <a href="#" class="slide-box">
+                        <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 1">
+                        <h3>Başlık 1</h3>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#" class="slide-box">
+                        <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 2">
+                        <h3>Başlık 2</h3>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#" class="slide-box">
+                        <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 3">
+                        <h3>Başlık 3</h3>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#" class="slide-box">
+                        <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 3">
+                        <h3>Başlık 3</h3>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#" class="slide-box">
+                        <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 3">
+                        <h3>Başlık 3</h3>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#" class="slide-box">
+                        <img src="https://cdn.pentayazilim.com/media/media_item/default/3275/4473/responsive-images/01J2C4EPB0RFDSG2KX881CTQNH___webp_824_464.webp" alt="Başlık 3">
+                        <h3>Başlık 3</h3>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 <footer>
@@ -813,7 +1027,6 @@
 </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 

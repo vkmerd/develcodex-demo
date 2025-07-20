@@ -3,6 +3,7 @@
 footer{
     position: relative;
     margin-top: 50px;
+    overflow-x: clip;
 }
 
 .video-background {
@@ -160,5 +161,11 @@ li.footer-right-cta-item #footer-right-cta {
   }
   footer .footer-menu .footer-menu-item{
     font-size: 2.5rem;
+  }
+}
+
+@media(max-width:991px){
+  footer .video-bg{
+    object-position: center top;
   }
 }

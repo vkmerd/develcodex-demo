@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="assets/css/grid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -19,6 +19,150 @@
 <body>
 <div id="svg-sprite-container" style="display: none;"></div>
 <div id="overlay"></div>
+
+<!---
+
+<div class="menu-wrapper">
+    <div class="desktop-menu">
+        <div class="desktop-menu-area">
+
+            <div class="close-menu-wrapper">
+                <div class="close-menu"></div>
+            </div>
+
+
+
+           <div class="container desktop-menu-container">
+                <div class="main-menu-container">
+                    <ul class="desktop-menu-list">
+                        <li class="desktop-menu-item has-submenu">
+                            <a href="#" class="desktop-menu-link">Hizmetlerimiz</a>
+                        </li>
+                        <li class="desktop-menu-item"><a href="#" class="desktop-menu-link">Kurumsal</a></li>
+                        <li class="desktop-menu-item"><a href="#" class="desktop-menu-link">Referanslar</a></li>
+                        <li class="desktop-menu-item"><a href="#" class="desktop-menu-link">Blog</a></li>
+                        <li class="desktop-menu-item"><a href="#" class="desktop-menu-link">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="submenu-container">
+                    <div class="back-menu-wrapper">
+                        <div class="back-menu"></div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="submenu-left col-lg-6">
+                            <ul>
+                                <li class="submenu-item has-submenu" data-id="submenu-1"><a href="#" class="submenu-item-link">Saç Ekimi</a></li>
+                                <li class="submenu-item has-submenu" data-id="submenu-2"><a href="#" class="submenu-item-link">Diş Estetiği</a></li>
+                                <li class="submenu-item has-submenu" data-id="submenu-3"><a href="#" class="submenu-item-link">Burun Estetiği</a></li>
+                                <li class="submenu-item has-submenu" data-id="submenu-4"><a href="#" class="submenu-item-link">Burun Estetiği</a></li>
+                                <li class="submenu-item has-submenu" data-id="submenu-5"><a href="#" class="submenu-item-link">Burun Estetiği</a></li>
+                                <li class="submenu-item has-submenu" data-id="submenu-6"><a href="#" class="submenu-item-link">Burun Estetiği</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenu-right col-lg-6">
+                            <ul class="has-submenu-list testimonial-active" data-id="submenu-1">
+                                <li><a href="#" class="submenu-item-sublink">FUE Tekniği 1</a></li>
+                                <li><a href="#" class="submenu-item-sublink">DHI Tekniği 1</a></li>
+                                <li><a href="#" class="submenu-item-sublink">Sakal Ekimi 1</a></li>
+                            </ul>
+                            <ul class="has-submenu-list" data-id="submenu-2">
+                                <li><a href="#" class="submenu-item-sublink">FUE Tekniği 2</a></li>
+                                <li><a href="#" class="submenu-item-sublink">DHI Tekniği 2</a></li>
+                                <li><a href="#" class="submenu-item-sublink">Sakal Ekimi 2</a></li>
+                            </ul>
+                            <ul class="has-submenu-list" data-id="submenu-3">
+                                <li><a href="#" class="submenu-item-sublink">FUE Tekniği 3</a></li>
+                                <li><a href="#" class="submenu-item-sublink">DHI Tekniği 3</a></li>
+                                <li><a href="#" class="submenu-item-sublink">Sakal Ekimi 3</a></li>
+                            </ul>
+                            <ul class="has-submenu-list" data-id="submenu-4">
+                                <li><a href="#" class="submenu-item-sublink">FUE Tekniği 4</a></li>
+                                <li><a href="#" class="submenu-item-sublink">DHI Tekniği 4</a></li>
+                                <li><a href="#" class="submenu-item-sublink">Sakal Ekimi 4</a></li>
+                            </ul>
+                            <ul class="has-submenu-list" data-id="submenu-5">
+                                <li><a href="#" class="submenu-item-sublink">FUE Tekniği 5</a></li>
+                                <li><a href="#" class="submenu-item-sublink">DHI Tekniği 5</a></li>
+                                <li><a href="#" class="submenu-item-sublink">Sakal Ekimi 5</a></li>
+                            </ul>
+                            <ul class="has-submenu-list" data-id="submenu-6">
+                                <li><a href="#" class="submenu-item-sublink">FUE Tekniği 6</a></li>
+                                <li><a href="#" class="submenu-item-sublink">DHI Tekniği 6</a></li>
+                                <li><a href="#" class="submenu-item-sublink">Sakal Ekimi 6</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+           </div>
+
+        </div>
+    </div>
+</div>
+-->
+
+
+
+<div id="side-menu">
+    <div class="backdrop" onclick="closeMobileMenu();"></div>
+    <div class="content in">
+        <div onclick="closeMobileMenu();" class="close-btn">
+           <svg width="25" height="25"><use xlink:href="#cross"></use></svg>
+        </div>
+        <div class="headerLogos headerLogos d-flex justify-content-center">
+            <a href="index.html" class="top-logo">
+                <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
+            </a>
+        </div>
+        <nav class="mobile-menu">
+            <ul class="menu">
+                <li class="mobile-menu-item">
+                    <a href="about-us.html" aria-current="page">Hakkkımda</a>
+                </li>
+                <li class="mobile-menu-item menu-item-has-children">
+                    <a href="#" aria-current="page">Hizmetlerimiz</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="web-software.html">Web Yazılım</a>
+                        </li>
+                        <li>
+                            <a href="mobil-uygulama.html">Mobil Uygulama</a>
+                        </li>
+                        <li>
+                            <a href="seo.html">Search Engine Optimization</a>
+                        </li>
+                        <li>
+                            <a href="social-media-ads.html">Sosyal Medya YÖnetimi</a>
+                        </li>
+                        <li>
+                            <a href="content-services.html">İçerik Yönetimi</a>
+                        </li>
+                        <li>
+                            <a href="corporate-identity.html">Kurumsal Kimlik Tasarımı</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="urunlerimiz.html" aria-current="page">Ürünlerimiz</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="iletisim.html" aria-current="page">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-mobile-flags-item d-flex justify-content-center align-items-center">
+            <a href="#" class="header-mobile-contact-item align-items-center">
+                <img src="assets/images/icons/english.svg" alt="">
+            </a>
+            <a href="#" class="header-mobile-contact-item align-items-center">
+                <img src="assets/images/icons/turkish.svg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+
 <header class="header">
     <div class="container">
         <div class="header-container d-flex justify-content-between align-items-center">
@@ -26,28 +170,75 @@
                 <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
             </div>
             <div class="header-right">
+                <ul class="main-menu tops-menu d-none d-lg-flex">
+                    <li class="menu-item">
+                        <a href="about-us.html">Hakkımızda</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="referanslar.html">Referanslar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" >Hizmetlerimiz</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="web-software.html">Web Yazılım</a>
+                            </li>
+                            <li>
+                                <a href="mobil-uygulama.html">Mobil Uygulama</a>
+                            </li>
+                            <li>
+                                <a href="seo.html">Search Engine Optimization</a>
+                            </li>
+                            <li>
+                                <a href="social-media-ads.html">Sosyal Medya YÖnetimi</a>
+                            </li>
+                            <li>
+                                <a href="content-services.html">İçerik Yönetimi</a>
+                            </li>
+                            <li>
+                                <a href="corporate-identity.html">Kurumsal Kimlik Tasarımı</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="urunlerimiz.html">Ürünlerimiz</a>
+                    </li>
+                     <li class="menu-item">
+                        <a href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
                 <a href="#" class="header-contact-item header d-none d-lg-flex align-items-center">
                     <svg><use xlink:href="#phone-call"></use></svg>
                     <div class="header-contact-text">
                         +90 542 204 33 65
                     </div>
                 </a>
-                <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
-                    <svg><use xlink:href="#web-lang"></use></svg>
-                </a>
+                <div class="header-flags-item d-flex align-items-center">
+                    <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
+                        <img src="assets/images/icons/english.svg" alt="">
+                    </a>
+                    <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
+                        <img src="assets/images/icons/turkish.svg" alt="">
+                    </a>
+                </div>
                 <a href="#" class="header-contact-offer d-none d-mb-flex align-items-center">
                     Teklif Al!
                 </a>
-                <div class="menu-icon">
-                    
-                </div>
+                <a href="javascript:;" onclick="openMobileMenu()" class="menu-icons mobile-hamburger-menu d-block d-lg-none">
+                    <div class="hamburger-menu"></div>
+                </a>
             </div>
         </div>
     </div>
 </header>
 
 <main>
-        <div id="dim-overlay"></div>
+    <div id="dim-overlay" class="d-none d-lg-block"></div>
 
     <section class="other-content" id="banner" style="background: url('/assets/images/banner.webp'); background-size: cover; padding: 200px 0;">
         <div class="container">
@@ -57,7 +248,7 @@
                     <p id="banner-typewriter" class="banner-desc"></p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="/assets/images/Banner-Img.png" alt="Develcodex Banner" class="banner-right-img img-fluid">
+                    <img src="/assets/images/banner-last-image.png" alt="Develcodex Banner" class="banner-right-img img-fluid">
                 </div>
             </div>
         </div>
@@ -71,584 +262,586 @@
         </section>
     </div>
 
-<section id="home-services" class="container-fluid" style="background-image: url('/assets/images/4.webp');">
-    <div class="row justify-content-center">
-        <div class="col-xl-10">
-            <div class="row justify-content-center">
-                <div class="col-xxl-6 col-lg-8">
-                    <div class="home-services-title">Hizmetlerimizi Keşfedin </div>
-                    <div class="home-services-desc">
-                        Büyük bir ekip, küresel bir vizyon!<br>50+ kişilik ekibimiz ve sunulan 360 derece dijital hizmetlerimizle,<br>işletmenizin tüm ihtiyaçlarını tek bir çatı altında topluyoruz. 
-                    </div>
-                </div>
-            </div>
-            <div class="horizontal-scroll-section">
-                <div class="horizontal-scroll-wrapper">
-                    <div class="services-multibox-container" id="servicesContainer">
-                        <div class="services-col">
-                            <div class="services-content">
-                                <div class="services-graph-image">
-                                    <img src="/assets/images/seo-bg.webp" alt="Background">
-                                </div>
-                                <div class="services-icon">
-                                    <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
-                                </div>
-                                <div class="services-title">SEO 1</div>
-                                <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
-                            </div>
-                        </div>
-                        <div class="services-col">
-                            <div class="services-content">
-                                <div class="services-graph-image">
-                                    <img src="/assets/images/seo-bg.webp" alt="Background">
-                                </div>
-                                <div class="services-icon">
-                                    <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
-                                </div>
-                                <div class="services-title">SEO 1</div>
-                                <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
-                            </div>
-                        </div>
-                        <div class="services-col">
-                            <div class="services-content">
-                                <div class="services-graph-image">
-                                    <img src="/assets/images/seo-bg.webp" alt="Background">
-                                </div>
-                                <div class="services-icon">
-                                    <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
-                                </div>
-                                <div class="services-title">SEO 1</div>
-                                <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
-                            </div>
-                        </div>
-                        <div class="services-col">
-                            <div class="services-content">
-                                <div class="services-graph-image">
-                                    <img src="/assets/images/seo-bg.webp" alt="Background">
-                                </div>
-                                <div class="services-icon">
-                                    <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
-                                </div>
-                                <div class="services-title">SEO 1</div>
-                                <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
-                            </div>
-                        </div>
-                        <div class="services-col">
-                            <div class="services-content">
-                                <div class="services-graph-image">
-                                    <img src="/assets/images/seo-bg.webp" alt="Background">
-                                </div>
-                                <div class="services-icon">
-                                    <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
-                                </div>
-                                <div class="services-title">SEO 1</div>
-                                <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
-                            </div>
-                        </div>
-                        <div class="services-col">
-                            <div class="services-content">
-                                <div class="services-graph-image">
-                                    <img src="/assets/images/seo-bg.webp" alt="Background">
-                                </div>
-                                <div class="services-icon">
-                                    <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
-                                </div>
-                                <div class="services-title">SEO 1</div>
-                                <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
-                            </div>
-                        </div>
-                        <div class="services-col">
-                            <div class="services-content">
-                                <div class="services-graph-image">
-                                    <img src="/assets/images/seo-bg.webp" alt="Background">
-                                </div>
-                                <div class="services-icon">
-                                    <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
-                                </div>
-                                <div class="services-title">SEO 1</div>
-                                <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
-                            </div>
-                        </div>
-                        <div class="services-col">
-                            <div class="services-content">
-                                <div class="services-graph-image">
-                                    <img src="/assets/images/seo-bg.webp" alt="Background">
-                                </div>
-                                <div class="services-icon">
-                                    <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
-                                </div>
-                                <div class="services-title">SEO 1</div>
-                                <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-progress-bar-container">
-                    <div class="horizontal-progress-bar" id="scrollProgressBar"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="home-properties-section">
-    <div class="row justify-content-center">
-        <div class="col-xl-10">
-            <div class="row">
-                <div class="properties-section-col col-lg-12">
-                    <div class="properties-content" style="background-image: url('/assets/images/properties-one-bg.webp'); background-size: cover;">
-                        <div class="row">
-                            <div class="properties-col col-lg-5">
-                                <img src="/assets/images/properties-one-left-image.webp" alt="" class="properties-human-pattern">
-                                <img src="/assets/images/properties-one-computer.webp" alt="" class="properties-one-pc-pattern">
-                            </div>
-                            <div class="col-lg-7 mt-3 nt-lg-0">
-                                <div class="properties-one-title">İlk izlenim son şansınız olabilir.</div>
-                                <div class="custom-split"></div>
-                                <div class="properties-one-desc">Her bir piksel, her bir renk, tasarımın karakterini belirler ve ziyaretçisine bir hikaye anlatır.</div>
-                                <div class="custom-split"></div>
-                                <div class="properties-one-desc2">Kurumsal kimliğiniz, markanızın ruhudur ve bu ruhu dijital dünyada doğru bir şekilde yansıtmak, müşteri güveni ve marka sadakati açısından hayati öneme sahiptir.
-                                
-                                Premium bir web sitesi tasarlamak, bu kimliği zarif ve etkileyici bir şekilde sergilemenin en etkili yoludur. Her bir tasarım elementi, markanızın özgünlüğünü ve profesyonelliğini ön plana çıkarır,böylece potansiyel müşterileriniz üzerinde unutulmaz bir ilk izlenim bırakır.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="properties-section-col col-lg-12">
-                    <div class="properties-content" style="background-image: url('/assets/images/properties-one-bg.webp'); background-size: cover;">
-                        <div class="row">
-                            <div class="properties-col col-lg-5">
-                                <img src="/assets/images/properties-one-left-image.webp" alt="" class="properties-human-pattern">
-                                <img src="/assets/images/properties-one-computer.webp" alt="" class="properties-one-pc-pattern">
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="properties-one-title">İlk izlenim son şansınız olabilir.</div>
-                                <div class="custom-split"></div>
-                                <div class="properties-one-desc">Her bir piksel, her bir renk, tasarımın karakterini belirler ve ziyaretçisine bir hikaye anlatır.</div>
-                                <div class="custom-split"></div>
-                                <div class="properties-one-desc2">Kurumsal kimliğiniz, markanızın ruhudur ve bu ruhu dijital dünyada doğru bir şekilde yansıtmak, müşteri güveni ve marka sadakati açısından hayati öneme sahiptir.
-                                
-                                Premium bir web sitesi tasarlamak, bu kimliği zarif ve etkileyici bir şekilde sergilemenin en etkili yoludur. Her bir tasarım elementi, markanızın özgünlüğünü ve profesyonelliğini ön plana çıkarır,böylece potansiyel müşterileriniz üzerinde unutulmaz bir ilk izlenim bırakır.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="properties-section-col col-lg-12">
-                    <div class="properties-content" style="background-image: url('/assets/images/properties-one-bg.webp'); background-size: cover;">
-                        <div class="row">
-                            <div class="properties-col col-lg-5">
-                                <img src="/assets/images/properties-one-left-image.webp" alt="" class="properties-human-pattern">
-                                <img src="/assets/images/properties-one-computer.webp" alt="" class="properties-one-pc-pattern">
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="properties-one-title">İlk izlenim son şansınız olabilir.</div>
-                                <div class="custom-split"></div>
-                                <div class="properties-one-desc">Her bir piksel, her bir renk, tasarımın karakterini belirler ve ziyaretçisine bir hikaye anlatır.</div>
-                                <div class="custom-split"></div>
-                                <div class="properties-one-desc2">Kurumsal kimliğiniz, markanızın ruhudur ve bu ruhu dijital dünyada doğru bir şekilde yansıtmak, müşteri güveni ve marka sadakati açısından hayati öneme sahiptir.
-                                
-                                Premium bir web sitesi tasarlamak, bu kimliği zarif ve etkileyici bir şekilde sergilemenin en etkili yoludur. Her bir tasarım elementi, markanızın özgünlüğünü ve profesyonelliğini ön plana çıkarır,böylece potansiyel müşterileriniz üzerinde unutulmaz bir ilk izlenim bırakır.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="home-references">
-    <img src="/assets/images/home-references.webp" alt="" class="references-pattern">
-    <div class="container">
-        <div class="home-references-title">Referanslarımız</div>
-        <div class="references-row row justify-content-center">
+    <section id="home-services" style="background-image: url('/assets/images/4.webp');">
+        <div class="row justify-content-center">
             <div class="col-xl-10">
-                <div class="row mt-5">
-                    <div class="col-lg-6 mb-4">
-                        <div class="image-figure-wrapper">
-                            <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
-                            <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
-                        </div>
-                        <div class="references-content">
-                            <div class="references-title">Sahibinden</div>
-                            <div class="references-desc">Web Geliştirme & UI & UX Design</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="image-figure-wrapper">
-                            <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
-                            <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
-                        </div>
-                        <div class="references-content">
-                            <div class="references-title">Sahibinden</div>
-                            <div class="references-desc">Web Geliştirme & UI & UX Design</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="image-figure-wrapper">
-                            <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
-                            <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
-                        </div>
-                        <div class="references-content">
-                            <div class="references-title">Sahibinden</div>
-                            <div class="references-desc">Web Geliştirme & UI & UX Design</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="image-figure-wrapper">
-                            <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
-                            <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
-                        </div>
-                        <div class="references-content">
-                            <div class="references-title">Sahibinden</div>
-                            <div class="references-desc">Web Geliştirme & UI & UX Design</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="image-figure-wrapper">
-                            <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
-                            <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
-                        </div>
-                        <div class="references-content">
-                            <div class="references-title">Sahibinden</div>
-                            <div class="references-desc">Web Geliştirme & UI & UX Design</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="image-figure-wrapper">
-                            <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
-                            <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
-                        </div>
-                        <div class="references-content">
-                            <div class="references-title">Sahibinden</div>
-                            <div class="references-desc">Web Geliştirme & UI & UX Design</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="image-figure-wrapper">
-                            <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
-                            <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
-                        </div>
-                        <div class="references-content">
-                            <div class="references-title">Sahibinden</div>
-                            <div class="references-desc">Web Geliştirme & UI & UX Design</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="image-figure-wrapper">
-                            <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
-                            <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
-                        </div>
-                        <div class="references-content">
-                            <div class="references-title">Sahibinden</div>
-                            <div class="references-desc">Web Geliştirme & UI & UX Design</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="home-projects-section">
-    <img src="/assets/images/projects-bg.webp" alt="" class="projects-pattern">
-    <div class="container">
-        <div class="projects-row row justify-content-center">
-            <div class="col-xl-9">
-                <div class="projects-title">Her projenin arkasında bir hikaye vardır.</div>
-                <div class="projects-one-desc">Bir web sitesinin taklidi, asla muhteşem sonuçlar doğurmaz;</div>
-                <div class="projects-desc">Penta ise her zaman özgün ve yenilikçi <br>çözümler sunarak markanızı benzersiz kılar. Projelerimiz, ziyaretçiler üzerinde güçlü bir <br>etki bırakmayı başarır. Siz de bu ilham verici başarı hikayelerimizi keşfedin.</div>
                 <div class="row justify-content-center">
-                    <a href="#" id="projects-cta-btn">Tüm Referanslar</a>
+                    <div class="col-xxl-6 col-lg-8">
+                        <div class="home-services-title">Hizmetlerimizi Keşfedin </div>
+                        <div class="home-services-desc">
+                            Büyük bir ekip, küresel bir vizyon!<br>50+ kişilik ekibimiz ve sunulan 360 derece dijital hizmetlerimizle,<br>işletmenizin tüm ihtiyaçlarını tek bir çatı altında topluyoruz. 
+                        </div>
+                    </div>
                 </div>
-                <div class="row justify-content-center">
-                    <a href="#" id="projects-cta-btn2">Projenizi Başlatın</a>
+                <div class="horizontal-scroll-section">
+                    <div class="horizontal-scroll-wrapper">
+                        <div class="services-multibox-container" id="servicesContainer">
+                            <div class="services-col">
+                                <div class="services-content">
+                                    <div class="services-graph-image">
+                                        <img src="/assets/images/seo-bg.webp" alt="Background">
+                                    </div>
+                                    <div class="services-icon">
+                                        <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
+                                    </div>
+                                    <div class="services-title">SEO 1</div>
+                                    <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
+                                </div>
+                            </div>
+                            <div class="services-col">
+                                <div class="services-content">
+                                    <div class="services-graph-image">
+                                        <img src="/assets/images/seo-bg.webp" alt="Background">
+                                    </div>
+                                    <div class="services-icon">
+                                        <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
+                                    </div>
+                                    <div class="services-title">SEO 1</div>
+                                    <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
+                                </div>
+                            </div>
+                            <div class="services-col">
+                                <div class="services-content">
+                                    <div class="services-graph-image">
+                                        <img src="/assets/images/seo-bg.webp" alt="Background">
+                                    </div>
+                                    <div class="services-icon">
+                                        <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
+                                    </div>
+                                    <div class="services-title">SEO 1</div>
+                                    <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
+                                </div>
+                            </div>
+                            <div class="services-col">
+                                <div class="services-content">
+                                    <div class="services-graph-image">
+                                        <img src="/assets/images/seo-bg.webp" alt="Background">
+                                    </div>
+                                    <div class="services-icon">
+                                        <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
+                                    </div>
+                                    <div class="services-title">SEO 1</div>
+                                    <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
+                                </div>
+                            </div>
+                            <div class="services-col">
+                                <div class="services-content">
+                                    <div class="services-graph-image">
+                                        <img src="/assets/images/seo-bg.webp" alt="Background">
+                                    </div>
+                                    <div class="services-icon">
+                                        <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
+                                    </div>
+                                    <div class="services-title">SEO 1</div>
+                                    <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
+                                </div>
+                            </div>
+                            <div class="services-col">
+                                <div class="services-content">
+                                    <div class="services-graph-image">
+                                        <img src="/assets/images/seo-bg.webp" alt="Background">
+                                    </div>
+                                    <div class="services-icon">
+                                        <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
+                                    </div>
+                                    <div class="services-title">SEO 1</div>
+                                    <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
+                                </div>
+                            </div>
+                            <div class="services-col">
+                                <div class="services-content">
+                                    <div class="services-graph-image">
+                                        <img src="/assets/images/seo-bg.webp" alt="Background">
+                                    </div>
+                                    <div class="services-icon">
+                                        <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
+                                    </div>
+                                    <div class="services-title">SEO 1</div>
+                                    <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
+                                </div>
+                            </div>
+                            <div class="services-col">
+                                <div class="services-content">
+                                    <div class="services-graph-image">
+                                        <img src="/assets/images/seo-bg.webp" alt="Background">
+                                    </div>
+                                    <div class="services-icon">
+                                        <img src="/assets/images/seo-icon.webp" alt="SEO" class="seoicon">
+                                    </div>
+                                    <div class="services-title">SEO 1</div>
+                                    <div class="services-desc">Sitenizi arama motorlarında üste çıkartacak SEO stratejileri oluşturuyoruz.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-progress-bar-container">
+                        <div class="horizontal-progress-bar" id="scrollProgressBar"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<section id="home-develcodex-worlds" style="background-image: url('/assets/images/world-bg.webp'); ">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-5 col-lg-7">
-                <div class="world-section-title">Dünya Çapında Penta Yazılım</div>
-                <div class="world-section-desc">
-                    Uluslararası alanda faaliyet gösteren ekibimiz, <br>dünya çapındaki işletmeler için 360 derece <br>dijital dönüşüm hizmeti vermektedir.
-                </div>
-                <div class="row mt-5">
-                    <div class="col-6">
-                        <div class="worlds-count-content d-flex align-items-center">
-                            <div class="world-count">+3</div>
-                            <div class="world-text">Ülkede <br> Şube</div>
+    <section id="home-properties-section">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="row">
+                    <div class="properties-section-col col-lg-12">
+                        <div class="properties-content" style="background-image: url('/assets/images/properties-one-bg.webp'); background-size: cover;">
+                            <div class="row">
+                                <div class="properties-col col-lg-5">
+                                    <img src="/assets/images/properties-one-left-image.webp" alt="" class="properties-human-pattern">
+                                    <img src="/assets/images/properties-one-computer.webp" alt="" class="properties-one-pc-pattern">
+                                </div>
+                                <div class="col-lg-7 mt-3 nt-lg-0">
+                                    <div class="properties-one-title">İlk izlenim son şansınız olabilir.</div>
+                                    <div class="custom-split"></div>
+                                    <div class="properties-one-desc">Her bir piksel, her bir renk, tasarımın karakterini belirler ve ziyaretçisine bir hikaye anlatır.</div>
+                                    <div class="custom-split"></div>
+                                    <div class="properties-one-desc2">Kurumsal kimliğiniz, markanızın ruhudur ve bu ruhu dijital dünyada doğru bir şekilde yansıtmak, müşteri güveni ve marka sadakati açısından hayati öneme sahiptir.
+                                    
+                                    Premium bir web sitesi tasarlamak, bu kimliği zarif ve etkileyici bir şekilde sergilemenin en etkili yoludur. Her bir tasarım elementi, markanızın özgünlüğünü ve profesyonelliğini ön plana çıkarır,böylece potansiyel müşterileriniz üzerinde unutulmaz bir ilk izlenim bırakır.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="worlds-count-content d-flex align-items-center">
-                            <div class="world-count">+3</div>
-                            <div class="world-text">Ülkede <br> Şube</div>
+                    <div class="properties-section-col col-lg-12">
+                        <div class="properties-content" style="background-image: url('/assets/images/properties-one-bg.webp'); background-size: cover;">
+                            <div class="row">
+                                <div class="properties-col col-lg-5">
+                                    <img src="/assets/images/properties-one-left-image.webp" alt="" class="properties-human-pattern">
+                                    <img src="/assets/images/properties-one-computer.webp" alt="" class="properties-one-pc-pattern">
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="properties-one-title">İlk izlenim son şansınız olabilir.</div>
+                                    <div class="custom-split"></div>
+                                    <div class="properties-one-desc">Her bir piksel, her bir renk, tasarımın karakterini belirler ve ziyaretçisine bir hikaye anlatır.</div>
+                                    <div class="custom-split"></div>
+                                    <div class="properties-one-desc2">Kurumsal kimliğiniz, markanızın ruhudur ve bu ruhu dijital dünyada doğru bir şekilde yansıtmak, müşteri güveni ve marka sadakati açısından hayati öneme sahiptir.
+                                    
+                                    Premium bir web sitesi tasarlamak, bu kimliği zarif ve etkileyici bir şekilde sergilemenin en etkili yoludur. Her bir tasarım elementi, markanızın özgünlüğünü ve profesyonelliğini ön plana çıkarır,böylece potansiyel müşterileriniz üzerinde unutulmaz bir ilk izlenim bırakır.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="custom-split-line"></div>
-                    <div class="col-6">
-                        <div class="worlds-count-content d-flex align-items-center">
-                            <div class="world-count">+3</div>
-                            <div class="world-text">Ülkede <br> Şube</div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="worlds-count-content d-flex align-items-center">
-                            <div class="world-count">+3</div>
-                            <div class="world-text">Ülkede <br> Şube</div>
+                    <div class="properties-section-col col-lg-12">
+                        <div class="properties-content" style="background-image: url('/assets/images/properties-one-bg.webp'); background-size: cover;">
+                            <div class="row">
+                                <div class="properties-col col-lg-5">
+                                    <img src="/assets/images/properties-one-left-image.webp" alt="" class="properties-human-pattern">
+                                    <img src="/assets/images/properties-one-computer.webp" alt="" class="properties-one-pc-pattern">
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="properties-one-title">İlk izlenim son şansınız olabilir.</div>
+                                    <div class="custom-split"></div>
+                                    <div class="properties-one-desc">Her bir piksel, her bir renk, tasarımın karakterini belirler ve ziyaretçisine bir hikaye anlatır.</div>
+                                    <div class="custom-split"></div>
+                                    <div class="properties-one-desc2">Kurumsal kimliğiniz, markanızın ruhudur ve bu ruhu dijital dünyada doğru bir şekilde yansıtmak, müşteri güveni ve marka sadakati açısından hayati öneme sahiptir.
+                                    
+                                    Premium bir web sitesi tasarlamak, bu kimliği zarif ve etkileyici bir şekilde sergilemenin en etkili yoludur. Her bir tasarım elementi, markanızın özgünlüğünü ve profesyonelliğini ön plana çıkarır,böylece potansiyel müşterileriniz üzerinde unutulmaz bir ilk izlenim bırakır.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="home-develcodex-bottom-section" class="container-fluid">
+    <section id="home-references">
+        <img src="/assets/images/home-references.webp" alt="" class="references-pattern">
+        <div class="container">
+            <div class="home-references-title">Referanslarımız</div>
+            <div class="references-row row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row mt-5">
+                        <div class="col-lg-6 mb-4">
+                            <div class="image-figure-wrapper">
+                                <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
+                                <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
+                            </div>
+                            <div class="references-content">
+                                <div class="references-title">Sahibinden</div>
+                                <div class="references-desc">Web Geliştirme & UI & UX Design</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="image-figure-wrapper">
+                                <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
+                                <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
+                            </div>
+                            <div class="references-content">
+                                <div class="references-title">Sahibinden</div>
+                                <div class="references-desc">Web Geliştirme & UI & UX Design</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="image-figure-wrapper">
+                                <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
+                                <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
+                            </div>
+                            <div class="references-content">
+                                <div class="references-title">Sahibinden</div>
+                                <div class="references-desc">Web Geliştirme & UI & UX Design</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="image-figure-wrapper">
+                                <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
+                                <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
+                            </div>
+                            <div class="references-content">
+                                <div class="references-title">Sahibinden</div>
+                                <div class="references-desc">Web Geliştirme & UI & UX Design</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="image-figure-wrapper">
+                                <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
+                                <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
+                            </div>
+                            <div class="references-content">
+                                <div class="references-title">Sahibinden</div>
+                                <div class="references-desc">Web Geliştirme & UI & UX Design</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="image-figure-wrapper">
+                                <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
+                                <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
+                            </div>
+                            <div class="references-content">
+                                <div class="references-title">Sahibinden</div>
+                                <div class="references-desc">Web Geliştirme & UI & UX Design</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="image-figure-wrapper">
+                                <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
+                                <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
+                            </div>
+                            <div class="references-content">
+                                <div class="references-title">Sahibinden</div>
+                                <div class="references-desc">Web Geliştirme & UI & UX Design</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="image-figure-wrapper">
+                                <img src="/assets/images/sahibinden-image.webp" alt="Sahibinden Resim" class="references-images img-fluid">
+                                <img src="/assets/images/Sahibinden-Logo.webp" alt="Sahibinden Logo" class="reference-logo-pattern">
+                            </div>
+                            <div class="references-content">
+                                <div class="references-title">Sahibinden</div>
+                                <div class="references-desc">Web Geliştirme & UI & UX Design</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-projects-section">
         <img src="/assets/images/projects-bg.webp" alt="" class="projects-pattern">
-        <div class="develcodex-bottom-section-row row align-items-center">
-            <div class="develcodex-bottom-left-pattern col-xl-3 col-lg-2">
-                <img src="/assets/images/pc-image.webp" alt="" class="bottom-left-pattern-pc-image img-fluid">
-            </div>
-            <div class="col-xl-6 col-lg-8 develcodex-bottom-section-col-text">
-                <div class="develcodex-bottom-section-title">Penta Yazılım'ın Lider Konumu ve Başarı Sırları.</div>
-                <div class="develcodex-bottom-section-one-desc">2003 yılından bu yana sektörün önde gelen web tasarım ajanslarından biri olarak varlığımızı sürdürmekten gurur duyuyoruz.</div>
-                <div class="develcodex-bottom-section-desc">Bu süre zarfında, Penta Yazılım olarak her zaman müşteri memnuniyetini ve kaliteyi odak noktamız olarak belirledik. Lider konumumuzu sürdürmemizin temel sırlarından biri, teknolojideki sürekli değişimlere uyum sağlama yeteneğimizdir. Her zaman sektördeki en son gelişmeleri takip ediyor, bu gelişmeleri işimize entegre ediyor ve müşterilerimize en yenilikçi çözümleri sunuyoruz.</div>
-                <blockquote>Müşterilerimize karşı her zaman açık ve dürüst bir iletişim sürdürmekten ve işimizi şeffaf bir şekilde yürütmekten gurur duyuyoruz..</blockquote>
-                <div class="row justify-content-center">
-                    <a href="#" id="develcodex-bottom-section-cta-btn">Tüm Referanslar</a>
-                </div>
-                <div class="row justify-content-center">
-                    <a href="#" id="develcodex-bottom-section-cta-btn2">Projenizi Başlatın</a>
-                </div>
-            </div>
-            <div class="develcodex-bottom-right-pattern col-xl-3 col-lg-2">
-                <img src="/assets/images/pc-image.webp" alt="" class="bottom-right-pattern-pc-image img-fluid">
-            </div>
-        </div>
-</section>
-
-
-<section id="home-blog-area">
-    <div class="container">
-        <div class="d-flex justify-content-between">
-            <div class="blog-area-title">Son Gelişmeler</div>
-            <div class="blog-swiper-nav d-flex align-items-center">
-                <button class="nav-btn swiper-blog-button-prev">←</button>
-                <button class="nav-btn swiper-blog-button-next">→</button>
-            </div>
-        </div>
-        <div class="row mt-5">
-           <div class="swiper blog-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="blog-col">
-                        <a href="#" class="blog-area-content">
-                            <figure class="blog-area-figure">
-                                <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
-                            </figure>
-                            <div class="blog-date-content d-flex">
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                            </div>
-                            <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
-                        </a>
+        <div class="container">
+            <div class="projects-row row justify-content-center">
+                <div class="col-xl-9">
+                    <div class="projects-title">Her projenin arkasında bir hikaye vardır.</div>
+                    <div class="projects-one-desc">Bir web sitesinin taklidi, asla muhteşem sonuçlar doğurmaz;</div>
+                    <div class="projects-desc">Penta ise her zaman özgün ve yenilikçi <br>çözümler sunarak markanızı benzersiz kılar. Projelerimiz, ziyaretçiler üzerinde güçlü bir <br>etki bırakmayı başarır. Siz de bu ilham verici başarı hikayelerimizi keşfedin.</div>
+                    <div class="row justify-content-center">
+                        <a href="#" id="projects-cta-btn">Tüm Referanslar</a>
                     </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="blog-col">
-                        <a href="#" class="blog-area-content">
-                            <figure class="blog-area-figure">
-                                <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
-                            </figure>
-                            <div class="blog-date-content d-flex">
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                            </div>
-                            <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
-                        </a>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="blog-col">
-                        <a href="#" class="blog-area-content">
-                            <figure class="blog-area-figure">
-                                <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
-                            </figure>
-                            <div class="blog-date-content d-flex">
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                            </div>
-                            <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
-                        </a>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="blog-col">
-                        <a href="#" class="blog-area-content">
-                            <figure class="blog-area-figure">
-                                <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
-                            </figure>
-                            <div class="blog-date-content d-flex">
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                            </div>
-                            <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
-                        </a>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="blog-col">
-                        <a href="#" class="blog-area-content">
-                            <figure class="blog-area-figure">
-                                <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
-                            </figure>
-                            <div class="blog-date-content d-flex">
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                            </div>
-                            <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
-                        </a>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="blog-col">
-                        <a href="#" class="blog-area-content">
-                            <figure class="blog-area-figure">
-                                <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
-                            </figure>
-                            <div class="blog-date-content d-flex">
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                                <div class="blog-date-box">1 Temmuz 2025</div>
-                            </div>
-                            <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
-                        </a>
+                    <div class="row justify-content-center">
+                        <a href="#" id="projects-cta-btn2">Projenizi Başlatın</a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+
+    <section id="home-develcodex-worlds" style="background-image: url('/assets/images/world-bg.webp'); ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-7">
+                    <div class="world-section-title">Dünya Çapında Penta Yazılım</div>
+                    <div class="world-section-desc">
+                        Uluslararası alanda faaliyet gösteren ekibimiz, <br>dünya çapındaki işletmeler için 360 derece <br>dijital dönüşüm hizmeti vermektedir.
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <div class="worlds-count-content d-flex align-items-center">
+                                <div class="world-count">+3</div>
+                                <div class="world-text">Ülkede <br> Şube</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="worlds-count-content d-flex align-items-center">
+                                <div class="world-count">+3</div>
+                                <div class="world-text">Ülkede <br> Şube</div>
+                            </div>
+                        </div>
+                        <div class="custom-split-line"></div>
+                        <div class="col-6">
+                            <div class="worlds-count-content d-flex align-items-center">
+                                <div class="world-count">+3</div>
+                                <div class="world-text">Ülkede <br> Şube</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="worlds-count-content d-flex align-items-center">
+                                <div class="world-count">+3</div>
+                                <div class="world-text">Ülkede <br> Şube</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-develcodex-bottom-section" class="container-fluid">
+            <img src="/assets/images/projects-bg.webp" alt="" class="projects-pattern">
+            <div class="develcodex-bottom-section-row row align-items-center">
+                <div class="develcodex-bottom-left-pattern col-xl-3 col-lg-2">
+                    <img src="/assets/images/pc-image.webp" alt="" class="bottom-left-pattern-pc-image img-fluid">
+                </div>
+                <div class="col-xl-6 col-lg-8 develcodex-bottom-section-col-text">
+                    <div class="develcodex-bottom-section-title">Penta Yazılım'ın Lider Konumu ve Başarı Sırları.</div>
+                    <div class="develcodex-bottom-section-one-desc">2003 yılından bu yana sektörün önde gelen web tasarım ajanslarından biri olarak varlığımızı sürdürmekten gurur duyuyoruz.</div>
+                    <div class="develcodex-bottom-section-desc">Bu süre zarfında, Penta Yazılım olarak her zaman müşteri memnuniyetini ve kaliteyi odak noktamız olarak belirledik. Lider konumumuzu sürdürmemizin temel sırlarından biri, teknolojideki sürekli değişimlere uyum sağlama yeteneğimizdir. Her zaman sektördeki en son gelişmeleri takip ediyor, bu gelişmeleri işimize entegre ediyor ve müşterilerimize en yenilikçi çözümleri sunuyoruz.</div>
+                    <blockquote>Müşterilerimize karşı her zaman açık ve dürüst bir iletişim sürdürmekten ve işimizi şeffaf bir şekilde yürütmekten gurur duyuyoruz..</blockquote>
+                    <div class="row justify-content-center">
+                        <a href="#" id="develcodex-bottom-section-cta-btn">Tüm Referanslar</a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <a href="#" id="develcodex-bottom-section-cta-btn2">Projenizi Başlatın</a>
+                    </div>
+                </div>
+                <div class="develcodex-bottom-right-pattern col-xl-3 col-lg-2">
+                    <img src="/assets/images/pc-image.webp" alt="" class="bottom-right-pattern-pc-image img-fluid">
+                </div>
+            </div>
+    </section>
+
+
+    <section id="home-blog-area">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="blog-area-title">Son Gelişmeler</div>
+                <div class="blog-swiper-nav d-flex align-items-center">
+                    <button class="nav-btn swiper-blog-button-prev">←</button>
+                    <button class="nav-btn swiper-blog-button-next">→</button>
+                </div>
+            </div>
+            <div class="row mt-5">
+            <div class="col-12">
+                    <div class="swiper blog-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="blog-col">
+                                    <a href="#" class="blog-area-content">
+                                        <figure class="blog-area-figure">
+                                            <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
+                                        </figure>
+                                        <div class="blog-date-content d-flex">
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                        </div>
+                                        <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-col">
+                                    <a href="#" class="blog-area-content">
+                                        <figure class="blog-area-figure">
+                                            <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
+                                        </figure>
+                                        <div class="blog-date-content d-flex">
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                        </div>
+                                        <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-col">
+                                    <a href="#" class="blog-area-content">
+                                        <figure class="blog-area-figure">
+                                            <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
+                                        </figure>
+                                        <div class="blog-date-content d-flex">
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                        </div>
+                                        <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-col">
+                                    <a href="#" class="blog-area-content">
+                                        <figure class="blog-area-figure">
+                                            <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
+                                        </figure>
+                                        <div class="blog-date-content d-flex">
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                        </div>
+                                        <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-col">
+                                    <a href="#" class="blog-area-content">
+                                        <figure class="blog-area-figure">
+                                            <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
+                                        </figure>
+                                        <div class="blog-date-content d-flex">
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                        </div>
+                                        <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-col">
+                                    <a href="#" class="blog-area-content">
+                                        <figure class="blog-area-figure">
+                                            <img src="/assets/images/kupa-image.webp" class="blog-area-image img-fluid" alt="">
+                                        </figure>
+                                        <div class="blog-date-content d-flex">
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                            <div class="blog-date-box">1 Temmuz 2025</div>
+                                        </div>
+                                        <div class="blog-post-title">20'den Fazla Ödülle Geri Döndük</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="home-accordion-content">
+        <div class="container">
+            <div class="accordion-header">
+    <div class="accordion-inner">
+        <div class="accordion-title">Türkiye'nin Web Tasarım Ajansı: Penta Yazılım</div>
+        <div class="accordion-icon">
+        <div class="accordion-line-horizontal"></div>
+        <div class="accordion-line-vertical"></div>
         </div>
     </div>
-</section>
-
-
-<section id="home-accordion-content">
-    <div class="container">
-        <div class="accordion-header">
-  <div class="accordion-inner">
-    <div class="accordion-title">Türkiye'nin Web Tasarım Ajansı: Penta Yazılım</div>
-    <div class="accordion-icon">
-      <div class="accordion-line-horizontal"></div>
-      <div class="accordion-line-vertical"></div>
     </div>
-  </div>
-</div>
 
-<div class="accordion-content">
-  <div class="accordion-text-wrapper">
-    <div class="accordion-text">
-      <h2>Web Tasarım Ajansı Seçerken Nelere Dikkat Etmelisiniz?</h2>
-      <p>Web sitesi, bir markanın dijital dünyadaki en temel yüzü haline geldi. Hem kurumsal itibar hem de dijital dönüşüm süreci için web tasarım kalitesi çok önemli. Bu nedenle markanız için doğru <strong>Web Tasarım Ajansı</strong> ile çalışmak kritik bir karardır.</p>
-      <p>Piyasada yüzlerce ajans varken, doğru tercihi yapmak göründüğünden daha zor olabilir. Her ajansın sunduğu hizmetler, teknik yeterliliği ve yaklaşımı farklılık gösterir. Bu yüzden bir ajansla çalışmadan önce ihtiyaçlarınızı net olarak belirlemeniz gerekir. Size sadece görsel anlamda iyi görünen değil, aynı zamanda kullanıcı deneyimi, SEO, mobil uyumluluk ve performans açısından da güçlü bir altyapı sağlayacak bir ajansla çalışmalısınız.</p>
-      
-      <h3>Kurumsal Web Tasarım Ajansı Nedir ve Neden Önemlidir?</h3>
-      <p>Özellikle şirketlerin dijitalde profesyonel bir görünüm sergilemesi için <strong>Kurumsal Web Tasarım Ajansı</strong> ile çalışmak gerekir. Bu ajanslar, sadece bir web sitesi yapmakla kalmaz; markanın kurumsal kimliğine uygun, kullanıcı deneyimi odaklı, mobil uyumlu ve SEO dostu yapılar inşa eder.</p>
-      <p>Kurumsal web tasarım süreci, markanın vizyonunu ve değerlerini doğru yansıtan, hedef kitlenin dijital beklentilerini karşılayan bir yapı kurulmasıyla mümkündür. Başarılı bir kurumsal web sitesi, dijitalde prestij sağlar, güven kazandırır ve dijital pazarlama faaliyetlerinin temelini oluşturur.</p>
-      
-      <p>Kurumsal web tasarımda dikkat edilmesi gerekenler:</p>
-      <ul>
-        <li>Renk ve tipografi uyumu</li>
-        <li>Marka diliyle tutarlı içerik yapısı</li>
-        <li>İleri düzey frontend ve backend altyapısı</li>
-        <li>Yüksek güvenlik protokolleri</li>
-        <li>Erişilebilirlik ve erişim kolaylığı</li>
-        <li>Çok dilli yapı ve yönetim kolaylığı</li>
-      </ul>
+    <div class="accordion-content">
+    <div class="accordion-text-wrapper">
+        <div class="accordion-text">
+        <h2>Web Tasarım Ajansı Seçerken Nelere Dikkat Etmelisiniz?</h2>
+        <p>Web sitesi, bir markanın dijital dünyadaki en temel yüzü haline geldi. Hem kurumsal itibar hem de dijital dönüşüm süreci için web tasarım kalitesi çok önemli. Bu nedenle markanız için doğru <strong>Web Tasarım Ajansı</strong> ile çalışmak kritik bir karardır.</p>
+        <p>Piyasada yüzlerce ajans varken, doğru tercihi yapmak göründüğünden daha zor olabilir. Her ajansın sunduğu hizmetler, teknik yeterliliği ve yaklaşımı farklılık gösterir. Bu yüzden bir ajansla çalışmadan önce ihtiyaçlarınızı net olarak belirlemeniz gerekir. Size sadece görsel anlamda iyi görünen değil, aynı zamanda kullanıcı deneyimi, SEO, mobil uyumluluk ve performans açısından da güçlü bir altyapı sağlayacak bir ajansla çalışmalısınız.</p>
+        
+        <h3>Kurumsal Web Tasarım Ajansı Nedir ve Neden Önemlidir?</h3>
+        <p>Özellikle şirketlerin dijitalde profesyonel bir görünüm sergilemesi için <strong>Kurumsal Web Tasarım Ajansı</strong> ile çalışmak gerekir. Bu ajanslar, sadece bir web sitesi yapmakla kalmaz; markanın kurumsal kimliğine uygun, kullanıcı deneyimi odaklı, mobil uyumlu ve SEO dostu yapılar inşa eder.</p>
+        <p>Kurumsal web tasarım süreci, markanın vizyonunu ve değerlerini doğru yansıtan, hedef kitlenin dijital beklentilerini karşılayan bir yapı kurulmasıyla mümkündür. Başarılı bir kurumsal web sitesi, dijitalde prestij sağlar, güven kazandırır ve dijital pazarlama faaliyetlerinin temelini oluşturur.</p>
+        
+        <p>Kurumsal web tasarımda dikkat edilmesi gerekenler:</p>
+        <ul>
+            <li>Renk ve tipografi uyumu</li>
+            <li>Marka diliyle tutarlı içerik yapısı</li>
+            <li>İleri düzey frontend ve backend altyapısı</li>
+            <li>Yüksek güvenlik protokolleri</li>
+            <li>Erişilebilirlik ve erişim kolaylığı</li>
+            <li>Çok dilli yapı ve yönetim kolaylığı</li>
+        </ul>
 
-      <h3>İstanbul Web Tasarım Firmaları Arasında Öne Çıkan Seçenek: Penta Yazılım</h3>
-      <p><strong>İstanbul Web Tasarım Ajansı</strong> arayışındaysanız, sektör deneyimi, referans projeleri ve çözüm odaklı hizmet yapısıyla <strong>Penta Yazılım</strong> öne çıkan ajanslardan biridir. İstanbul gibi rekabetin yüksek olduğu bir şehirde, ajans tercihi büyük önem taşır.</p>
-      <p>Penta Yazılım, yılların verdiği deneyimle, İstanbul merkezli olarak hizmet veren ve Türkiye genelinde binlerce referansa sahip bir <strong>Web Tasarım Firması</strong>dır. Ajans, her ölçekteki markaya özel çözümler sunarak dijitalde güçlü bir konumlandırma sağlar.</p>
+        <h3>İstanbul Web Tasarım Firmaları Arasında Öne Çıkan Seçenek: Penta Yazılım</h3>
+        <p><strong>İstanbul Web Tasarım Ajansı</strong> arayışındaysanız, sektör deneyimi, referans projeleri ve çözüm odaklı hizmet yapısıyla <strong>Penta Yazılım</strong> öne çıkan ajanslardan biridir. İstanbul gibi rekabetin yüksek olduğu bir şehirde, ajans tercihi büyük önem taşır.</p>
+        <p>Penta Yazılım, yılların verdiği deneyimle, İstanbul merkezli olarak hizmet veren ve Türkiye genelinde binlerce referansa sahip bir <strong>Web Tasarım Firması</strong>dır. Ajans, her ölçekteki markaya özel çözümler sunarak dijitalde güçlü bir konumlandırma sağlar.</p>
 
-      <p>Penta Yazılım’ın sunduğu hizmetlerden bazıları:</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Hizmet Alanı</th>
-            <th>Açıklama</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Web Tasarımı</td>
-            <td>Mobil uyumlu, özgün ve markaya özel arayüz tasarımı</td>
-          </tr>
-          <tr>
-            <td>Yazılım Geliştirme</td>
-            <td>Özel yazılım çözümleri, yönetim panelleri ve fonksiyonel modüller</td>
-          </tr>
-          <tr>
-            <td>SEO Optimizasyonu</td>
-            <td>Teknik SEO, içerik yapısı ve site hızı iyileştirmeleri</td>
-          </tr>
-          <tr>
-            <td>Hosting ve Güvenlik</td>
-            <td>Güçlü sunucu altyapısı, yedekleme, SSL ve güvenlik duvarı entegrasyonu</td>
-          </tr>
-          <tr>
-            <td>Teknik Destek ve Eğitim</td>
-            <td>Yayın sonrası destek ve içerik yönetimi eğitimi</td>
-          </tr>
-        </tbody>
-      </table>
+        <p>Penta Yazılım’ın sunduğu hizmetlerden bazıları:</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Hizmet Alanı</th>
+                <th>Açıklama</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Web Tasarımı</td>
+                <td>Mobil uyumlu, özgün ve markaya özel arayüz tasarımı</td>
+            </tr>
+            <tr>
+                <td>Yazılım Geliştirme</td>
+                <td>Özel yazılım çözümleri, yönetim panelleri ve fonksiyonel modüller</td>
+            </tr>
+            <tr>
+                <td>SEO Optimizasyonu</td>
+                <td>Teknik SEO, içerik yapısı ve site hızı iyileştirmeleri</td>
+            </tr>
+            <tr>
+                <td>Hosting ve Güvenlik</td>
+                <td>Güçlü sunucu altyapısı, yedekleme, SSL ve güvenlik duvarı entegrasyonu</td>
+            </tr>
+            <tr>
+                <td>Teknik Destek ve Eğitim</td>
+                <td>Yayın sonrası destek ve içerik yönetimi eğitimi</td>
+            </tr>
+            </tbody>
+        </table>
 
-      <h3>Web Sitesi Tasarımı Ajansı ile Çalışmanın Avantajları</h3>
-      <p>İyi bir <strong>Web Sitesi Tasarımı Ajansı</strong>, size sadece görsel bir çözüm sunmaz; aynı zamanda hedef kitlenize hitap eden, dönüşümleri artıran, güven oluşturan bir dijital deneyim inşa eder. Özellikle rekabetin yoğun olduğu dijital dünyada, profesyonel destek almadan ilerlemek oldukça zordur.</p>
+        <h3>Web Sitesi Tasarımı Ajansı ile Çalışmanın Avantajları</h3>
+        <p>İyi bir <strong>Web Sitesi Tasarımı Ajansı</strong>, size sadece görsel bir çözüm sunmaz; aynı zamanda hedef kitlenize hitap eden, dönüşümleri artıran, güven oluşturan bir dijital deneyim inşa eder. Özellikle rekabetin yoğun olduğu dijital dünyada, profesyonel destek almadan ilerlemek oldukça zordur.</p>
 
-      <p>Web ajansıyla çalışmanın avantajları:</p>
-      <ul>
-        <li>Profesyonel ve güvenilir dijital görünüm</li>
-        <li>Mobil uyumluluk ve çoklu cihaz desteği</li>
-        <li>Arama motorlarında görünürlük artışı</li>
-        <li>Kullanıcı dostu içerik yönetim sistemi</li>
-        <li>Hızlı teknik destek ve bakım hizmetleri</li>
-      </ul>
+        <p>Web ajansıyla çalışmanın avantajları:</p>
+        <ul>
+            <li>Profesyonel ve güvenilir dijital görünüm</li>
+            <li>Mobil uyumluluk ve çoklu cihaz desteği</li>
+            <li>Arama motorlarında görünürlük artışı</li>
+            <li>Kullanıcı dostu içerik yönetim sistemi</li>
+            <li>Hızlı teknik destek ve bakım hizmetleri</li>
+        </ul>
 
-      <p>Bu avantajların yanı sıra, zaman ve maliyet açısından da uzun vadede kazanç sağlarsınız. Hazır temalardan uzak, özgün ve performans odaklı bir yapı kurmak markanızı dijitalde ileri taşır.</p>
+        <p>Bu avantajların yanı sıra, zaman ve maliyet açısından da uzun vadede kazanç sağlarsınız. Hazır temalardan uzak, özgün ve performans odaklı bir yapı kurmak markanızı dijitalde ileri taşır.</p>
 
-      <h3>Web Ajansı Tercihinde Neden Penta Yazılım?</h3>
-      <p><strong>Penta Yazılım</strong>, dijital varlığınıza özel strateji geliştirerek sadece web sitesi değil, dijitalde bütüncül bir marka deneyimi sunar. Projelerin başından sonuna kadar tüm detaylarla yakından ilgilenir ve markanızı en doğru şekilde temsil edecek dijital altyapıyı oluşturur.</p>
+        <h3>Web Ajansı Tercihinde Neden Penta Yazılım?</h3>
+        <p><strong>Penta Yazılım</strong>, dijital varlığınıza özel strateji geliştirerek sadece web sitesi değil, dijitalde bütüncül bir marka deneyimi sunar. Projelerin başından sonuna kadar tüm detaylarla yakından ilgilenir ve markanızı en doğru şekilde temsil edecek dijital altyapıyı oluşturur.</p>
 
-      <p>Penta Yazılım’ın ajans yaklaşımında öne çıkan bazı değerler:</p>
-      <ul>
-        <li>Kurumsal kimliğinize uygun sıfırdan arayüz tasarımları</li>
-        <li>UI/UX uzmanlığı ile öne çıkan kullanıcı deneyimi kurguları</li>
-        <li>Dönüşüm odaklı site yapıları ve satışa yönlendiren sayfa planlamaları</li>
-        <li>Tüm cihazlarla uyumlu responsive çözümler</li>
-        <li>Yayın sonrası teknik destek ve güncelleme hizmetleri</li>
-      </ul>
+        <p>Penta Yazılım’ın ajans yaklaşımında öne çıkan bazı değerler:</p>
+        <ul>
+            <li>Kurumsal kimliğinize uygun sıfırdan arayüz tasarımları</li>
+            <li>UI/UX uzmanlığı ile öne çıkan kullanıcı deneyimi kurguları</li>
+            <li>Dönüşüm odaklı site yapıları ve satışa yönlendiren sayfa planlamaları</li>
+            <li>Tüm cihazlarla uyumlu responsive çözümler</li>
+            <li>Yayın sonrası teknik destek ve güncelleme hizmetleri</li>
+        </ul>
 
-      <h3>Doğru Ajansla Dijitalde Fark Yaratın</h3>
-      <p>Web ajansı seçiminizi uzun vadeli düşünün. Sadece bir web sitesi değil, aynı zamanda dijitalde bir iz, bir imaj, bir kullanıcı deneyimi inşa ediyorsunuz. Bunu yalnızca teknik değil, stratejik bir ortaklık olarak değerlendirmek gerekir.</p>
+        <h3>Doğru Ajansla Dijitalde Fark Yaratın</h3>
+        <p>Web ajansı seçiminizi uzun vadeli düşünün. Sadece bir web sitesi değil, aynı zamanda dijitalde bir iz, bir imaj, bir kullanıcı deneyimi inşa ediyorsunuz. Bunu yalnızca teknik değil, stratejik bir ortaklık olarak değerlendirmek gerekir.</p>
 
-      <p><strong>Penta Yazılım</strong>, size bu ortaklığı güçlü, şeffaf ve yüksek kaliteyle sunar. Markanızı dijitalde güvenle temsil edecek bir ekip arıyorsanız, doğru adres Penta Yazılım’dır.</p>
+        <p><strong>Penta Yazılım</strong>, size bu ortaklığı güçlü, şeffaf ve yüksek kaliteyle sunar. Markanızı dijitalde güvenle temsil edecek bir ekip arıyorsanız, doğru adres Penta Yazılım’dır.</p>
 
-      <p>Hedef kitlenize ulaşmak, sitenizin performansını artırmak ve dijital dönüşümde öncü olmak için hemen bizimle iletişime geçin.</p>
+        <p>Hedef kitlenize ulaşmak, sitenizin performansını artırmak ve dijital dönüşümde öncü olmak için hemen bizimle iletişime geçin.</p>
+        </div>
     </div>
-  </div>
-</div>
-
     </div>
-</section>
+
+        </div>
+    </section>
 
 
 <footer>
@@ -783,8 +976,9 @@
 </main>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
 <script src="/assets/js/home.js"></script>
+<script src="/assets/js/header.js"></script>
 <script src="/assets/js/footer.js"></script>
+
 </body>
 </html>

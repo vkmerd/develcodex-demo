@@ -12,7 +12,64 @@
 </head>
 <body>
 <div id="svg-sprite-container" style="display: none;"></div>
-<div id="overlay"></div>
+<div id="side-menu">
+    <div class="backdrop" onclick="closeMobileMenu();"></div>
+    <div class="content in">
+        <div onclick="closeMobileMenu();" class="close-btn">
+           <svg width="25" height="25"><use xlink:href="#cross"></use></svg>
+        </div>
+        <div class="headerLogos headerLogos d-flex justify-content-center">
+            <a href="index.html" class="top-logo">
+                <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
+            </a>
+        </div>
+        <nav class="mobile-menu">
+            <ul class="menu">
+                <li class="mobile-menu-item">
+                    <a href="about-us.html" aria-current="page">Hakkkımda</a>
+                </li>
+                <li class="mobile-menu-item menu-item-has-children">
+                    <a href="#" aria-current="page">Hizmetlerimiz</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="web-software.html">Web Yazılım</a>
+                        </li>
+                        <li>
+                            <a href="mobil-uygulama.html">Mobil Uygulama</a>
+                        </li>
+                        <li>
+                            <a href="seo.html">Search Engine Optimization</a>
+                        </li>
+                        <li>
+                            <a href="social-media-ads.html">Sosyal Medya YÖnetimi</a>
+                        </li>
+                        <li>
+                            <a href="content-services.html">İçerik Yönetimi</a>
+                        </li>
+                        <li>
+                            <a href="corporate-identity.html">Kurumsal Kimlik Tasarımı</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="urunlerimiz.html" aria-current="page">Ürünlerimiz</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="iletisim.html" aria-current="page">İletişim</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-mobile-flags-item d-flex justify-content-center align-items-center">
+            <a href="#" class="header-mobile-contact-item align-items-center">
+                <img src="assets/images/icons/english.svg" alt="">
+            </a>
+            <a href="#" class="header-mobile-contact-item align-items-center">
+                <img src="assets/images/icons/turkish.svg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
 <header class="header">
     <div class="container">
         <div class="header-container d-flex justify-content-between align-items-center">
@@ -20,21 +77,68 @@
                 <img src="assets/images/develcodex-logo.png" alt="Develcodex Logo" class="img-fluid">
             </div>
             <div class="header-right">
+                <ul class="main-menu tops-menu d-none d-lg-flex">
+                    <li class="menu-item">
+                        <a href="about-us.html">Hakkımızda</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="referanslar.html">Referanslar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" >Hizmetlerimiz</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="web-software.html">Web Yazılım</a>
+                            </li>
+                            <li>
+                                <a href="mobil-uygulama.html">Mobil Uygulama</a>
+                            </li>
+                            <li>
+                                <a href="seo.html">Search Engine Optimization</a>
+                            </li>
+                            <li>
+                                <a href="social-media-ads.html">Sosyal Medya YÖnetimi</a>
+                            </li>
+                            <li>
+                                <a href="content-services.html">İçerik Yönetimi</a>
+                            </li>
+                            <li>
+                                <a href="corporate-identity.html">Kurumsal Kimlik Tasarımı</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="urunlerimiz.html">Ürünlerimiz</a>
+                    </li>
+                     <li class="menu-item">
+                        <a href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
                 <a href="#" class="header-contact-item header d-none d-lg-flex align-items-center">
                     <svg><use xlink:href="#phone-call"></use></svg>
                     <div class="header-contact-text">
                         +90 542 204 33 65
                     </div>
                 </a>
-                <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
-                    <svg><use xlink:href="#web-lang"></use></svg>
-                </a>
-                <a href="#" class="header-contact-offer d-flex align-items-center">
+                <div class="header-flags-item d-flex align-items-center">
+                    <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
+                        <img src="assets/images/icons/english.svg" alt="">
+                    </a>
+                    <a href="#" class="header-contact-item d-none d-lg-flex align-items-center">
+                        <img src="assets/images/icons/turkish.svg" alt="">
+                    </a>
+                </div>
+                <a href="#" class="header-contact-offer d-none d-mb-flex align-items-center">
                     Teklif Al!
                 </a>
-                <div class="menu-icon">
-                    
-                </div>
+                <a href="javascript:;" onclick="openMobileMenu()" class="menu-icons mobile-hamburger-menu d-block d-lg-none">
+                    <div class="hamburger-menu"></div>
+                </a>
             </div>
         </div>
     </div>
@@ -251,6 +355,7 @@
     </div>
 </footer>
 </main>
+<script src="/assets/js/header.js"></script>
 <script src="/assets/js/footer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
 </body>
