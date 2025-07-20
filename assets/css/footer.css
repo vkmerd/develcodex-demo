@@ -163,9 +163,25 @@ li.footer-right-cta-item #footer-right-cta {
     font-size: 2.5rem;
   }
 }
-
+@media(max-width:1200px){
+  body footer .footer-menu .footer-menu-item{
+      font-size: 2.75rem;
+  }
+  .footer-right-cta-item #footer-right-cta {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
 @media(max-width:991px){
   footer .video-bg{
     object-position: center top;
+  }
+
+  body footer .footer-menu {
+    padding: 0 0px;
+  }
+
+  body footer .footer-menu .footer-menu-item{
+    font-size: 28px;
   }
 }

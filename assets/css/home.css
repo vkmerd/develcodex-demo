@@ -922,13 +922,6 @@
     border: 1px solid #fff
 }
 
-
-@media(max-width:1200px){
-    body footer .footer-menu .footer-menu-item{
-        font-size: 2.75rem;
-    }
-}
-
 @media(max-width:991px){
     main #banner{
         padding:135px 20px 45px 20px!important;
@@ -963,6 +956,19 @@
     body footer .footer-menu{
         padding: 0 25px;
     }
+
+    main #home-blog-area{
+        padding: 60px 15px;
+    }
+
+    main #home-blog-area .blog-title-area {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main #home-blog-area .blog-swiper-nav{
+        justify-content: center;
+    }
 }
 
 @media(max-width:768px){
@@ -996,5 +1002,21 @@
     main .properties-human-pattern {
         transform: translate(45px, -53px);
         width: 178px;
+    }
+
+    main .services-col{
+        width: 300px;
+    }
+
+    main #banner-typewriter{
+        font-size: 30px;
+    }
+
+    main .projects-title {
+        font-size: 28px;
+    }
+
+    main .projects-one-desc {
+        font-size: 20px;
     }
 }
