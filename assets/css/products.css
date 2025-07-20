@@ -503,10 +503,27 @@
   main .custom-product-section{
     padding: 0 20px;
   }
+
+ main .products-heading {
+    font-size: 28px;
+  }
+
+  main .product-desc{
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  main .products-title-field {
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
 }
 
 @media(max-width:575px){
   .products-banner-desc{
     font-size: 18px;
+    line-height: 1.2;
   }
 }
