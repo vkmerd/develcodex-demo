@@ -302,6 +302,7 @@ header.header {
     position: relative;
     z-index: 2004;
     padding: 20px;
+    overflow-x: clip;
 }
 
 .img-responsive{
