@@ -127,6 +127,10 @@
     padding-right: 30px;
     padding-top: 30px;
   }
+
+  main #about-image-mobile {
+    padding: 0 20px;
+}
 }
 
 .custom-image-grid {
